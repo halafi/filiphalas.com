@@ -1,0 +1,46 @@
+{
+  "name": "halafi.github.io",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --mode development --hot --inline --config config/webpack.config.js --open --env.NODE_ENV=development",
+    "build": "webpack --mode production --config config/webpack.config.js --env.NODE_ENV=production"
+  },
+  "author": "Filip Halas",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^22.4.3",
+    "ramda": "^0.25.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-ramda": "^1.5.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jest": "^21.15.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.69.0",
+    "prettier": "^1.11.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
