@@ -6,6 +6,9 @@ module.exports = env => ({
     filename: 'bundle.js',
     path: path.resolve(__dirname, '../dist'),
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   devtool: env.NODE_ENV !== 'production' ? 'eval-source-map' : false,
   devServer: {
     contentBase: path.resolve(__dirname, '..'),
