@@ -4,12 +4,11 @@ module.exports = env => ({
   entry: path.resolve(__dirname, '../src/index.jsx'),
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '../public/dist'),
-    // publicPath: '/assets/',
+    path: path.resolve(__dirname, '../dist'),
   },
   devtool: env.NODE_ENV !== 'production' ? 'eval-source-map' : false,
   devServer: {
-    contentBase: path.resolve(__dirname, '../public'),
+    contentBase: path.resolve(__dirname, '..'),
     publicPath: '/dist/',
   },
   module: {
