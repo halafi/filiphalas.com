@@ -30,7 +30,7 @@ class Root extends Component {
   render() {
     return (
       <StyledRoot>
-        <Navbar />
+        {/*<Navbar />*/}
         <LandingPage />
       </StyledRoot>
     )
