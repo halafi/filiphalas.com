@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { injectGlobal } from 'styled-components'
+import styled, { injectGlobal } from 'styled-components'
 import LandingPage from './scenes/LandingPage/LandingPage'
 import Navbar from './common/components/Navbar/Navbar'
 
@@ -20,13 +20,19 @@ injectGlobal`
   }
 `
 
+const StyledRoot = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
+
 class Root extends Component {
   render() {
     return (
-      <div>
+      <StyledRoot>
         <Navbar />
         <LandingPage />
-      </div>
+      </StyledRoot>
     )
   }
 }
