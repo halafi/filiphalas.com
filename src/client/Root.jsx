@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import styled, { injectGlobal } from 'styled-components'
+import { injectGlobal } from 'styled-components'
 import LandingPage from './scenes/LandingPage/LandingPage'
-// import Navbar from './common/components/Navbar/Navbar'
+import AboutPage from './scenes/AboutPage/AboutPage'
+import Navbar from './common/components/Navbar/Navbar'
 
 // Keep root / global CSS here
 // eslint-disable-next-line no-unused-expressions
@@ -20,19 +21,14 @@ injectGlobal`
   }
 `
 
-const StyledRoot = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-`
-
 class Root extends Component {
   render() {
     return (
-      <StyledRoot>
-        {/*<Navbar />*/}
+      <div>
+        <Navbar />
         <LandingPage />
-      </StyledRoot>
+        <AboutPage />
+      </div>
     )
   }
 }

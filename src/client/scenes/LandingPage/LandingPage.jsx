@@ -2,7 +2,7 @@
 
 import React, { PureComponent } from 'react'
 import styled from 'styled-components'
-import { tiny, small, medium, large } from '../../common/consts/styles/breakpoints'
+import { tiny, small, large } from '../../common/consts/styles/breakpoints'
 
 const StyledRoot = styled.main`
   display: flex;
@@ -11,6 +11,7 @@ const StyledRoot = styled.main`
   justify-content: center;
   text-align: center;
   padding: 18px 27px;
+  min-height: 100vh;
   a {
     color: inherit;
   }
@@ -99,7 +100,7 @@ const StyledLink = styled.a`
 class LandingPage extends PureComponent {
   render() {
     return (
-      <StyledRoot>
+      <StyledRoot id="landing-page">
         <StyledIntro>Hi, I am Filip.</StyledIntro>
         <StyledTagline>
           Frontend Developer @<a
