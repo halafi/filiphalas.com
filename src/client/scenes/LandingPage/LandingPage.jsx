@@ -35,6 +35,33 @@ const StyledLinkedBar = styled.div`
   }
 `
 
+const StyledLink = styled.a`
+  display: inline-block;
+  box-shadow: 0 0 1px transparent;
+  transform: perspective(1px) translateZ(0);
+  &:hover,
+  &:focus,
+  &:active {
+    animation: icon-wobble 0.75s ease-in-out;
+    transform: translate3d(0, 0, 0);
+  }
+
+  @keyframes icon-wobble {
+    25% {
+      transform: translateY(-8px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(-4px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+`
+
 class LandingPage extends PureComponent {
   render() {
     return (
@@ -51,29 +78,30 @@ class LandingPage extends PureComponent {
           | React <i className="fab fa-react" /> and Tech Enthusiast
         </StyledTagline>
         <StyledLinkedBar>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/halafi">
+          <StyledLink target="_blank" rel="noopener noreferrer" href="https://github.com/halafi">
             <i className="fab fa-github" />
-          </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/FilipHalas">
+          </StyledLink>
+          <StyledLink
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/FilipHalas"
+          >
             <i className="fab fa-twitter" />
-          </a>
-          <a
+          </StyledLink>
+          <StyledLink
             target="_blank"
             rel="noopener noreferrer"
             href="https://stackoverflow.com/users/4227313/halafi"
           >
             <i className="fab fa-stack-overflow" />
-          </a>
-          <a
+          </StyledLink>
+          <StyledLink
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/filip-halas-a7928476/"
           >
             <i className="fab fa-linkedin" />
-          </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@filiphalas">
-            <i className="fab fa-medium" />
-          </a>
+          </StyledLink>
         </StyledLinkedBar>
       </StyledRoot>
     )
