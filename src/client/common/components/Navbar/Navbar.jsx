@@ -13,6 +13,8 @@ const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 1;
 `
 
 const StyledMenu = styled.div`
