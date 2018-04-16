@@ -2,6 +2,7 @@
 
 import React, { PureComponent } from 'react'
 import styled from 'styled-components'
+import { tiny, small, medium, large } from '../../common/consts/styles/breakpoints'
 
 const StyledRoot = styled.main`
   display: flex;
@@ -16,22 +17,55 @@ const StyledRoot = styled.main`
 `
 
 const StyledIntro = styled.div`
-  font-size: 78px;
+  font-size: 48px;
   font-weight: 700;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
+  @media ${tiny} {
+    font-size: 58px;
+    padding-bottom: 8px;
+  }
+  @media ${small} {
+    font-size: 68px;
+    padding-bottom: 12px;
+  }
+  @media ${large} {
+    font-size: 78px;
+    padding-bottom: 16px;
+  }
 `
 
 const StyledTagline = styled.div`
-  font-size: 24px;
-  margin: 24px;
+  font-size: 18px;
   font-weight: 300;
+  margin: 18px;
+  @media ${tiny} {
+    font-size: 20px;
+    margin: 20px;
+  }
+  @media ${small} {
+    font-size: 22px;
+    margin: 24px;
+  }
+  @media ${large} {
+    font-size: 24px;
+    margin: 24px;
+  }
 `
 
 const StyledLinkedBar = styled.div`
-  font-size: 48px;
+  font-size: 34px;
   padding: 4px 0;
   i {
     padding: 0 10px;
+  }
+  @media ${tiny} {
+    font-size: 38px;
+  }
+  @media ${small} {
+    font-size: 44px;
+  }
+  @media ${large} {
+    font-size: 48px;
   }
 `
 
@@ -107,4 +141,5 @@ class LandingPage extends PureComponent {
     )
   }
 }
+
 export default LandingPage

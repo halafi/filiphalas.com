@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled, { injectGlobal } from 'styled-components'
 import LandingPage from './scenes/LandingPage/LandingPage'
-import Navbar from './common/components/Navbar/Navbar'
+// import Navbar from './common/components/Navbar/Navbar'
 
 // Keep root / global CSS here
 // eslint-disable-next-line no-unused-expressions
