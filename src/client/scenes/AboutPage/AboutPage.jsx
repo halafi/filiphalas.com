@@ -43,12 +43,12 @@ const StyledTitle = styled.h1`
 `
 
 const StyledText = styled.div`
-  font-size: 14px;
+  font-size: 15px;
   line-height: 27px;
   color: rgb(33, 33, 33);
   font-weight: 300;
   @media ${tiny} {
-    font-size: 15px;
+    font-size: 16px;
   }
 `
 
@@ -58,22 +58,25 @@ const AboutPage = () => (
       <StyledTitle>About Me</StyledTitle>
       <StyledText>
         <p>
-          I am a Web Developer from Czech Republic{' '}
-          <span role="img" aria-label="czech-flag">
-            🇨🇿
-          </span>.
+          I am a Web Developer from{' '}
+          <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/djXpTJuuHiP2">
+            Czechia
+          </a>. I develop modern and progressive web applications with{' '}
+          <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/">
+            React
+          </a>{' '}
+          and{' '}
+          <a target="_blank" rel="noopener noreferrer" href="https://nodejs.org/en/">
+            Node
+          </a>.
         </p>
         <p>
-          I got into programming with 2D Game Development in elementary school, I enjoyed creating
-          interactive applications and was making them for about 7 years.
+          I started programming in elementary school and always enjoyed creating interactive
+          applications.
         </p>
         <p>
-          I learned how to code in C, Java, Haskell and Go during my school years and then decided
-          to focus on building modern Web Applications.
-        </p>
-        <p>
-          Coming from a background of building Full Stack Web Applications with Java and JavaScript
-          I am now focused primarily on Frontend Development using React and Node.
+          I learned C, Haskell, Java and Go before I decided to fully focus on building modern Web
+          Applications in JavaScript.
         </p>
       </StyledText>
     </StyledContentWrapper>

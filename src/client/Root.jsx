@@ -19,6 +19,9 @@ injectGlobal`
     margin: 0;
     padding: 0;
   }
+  ::-webkit-scrollbar {
+    display: none; 
+  }
 `
 
 class Root extends Component {
