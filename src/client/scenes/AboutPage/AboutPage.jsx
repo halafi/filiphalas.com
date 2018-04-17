@@ -58,26 +58,17 @@ const AboutPage = () => (
     <StyledContentWrapper>
       <StyledTitle>About Me</StyledTitle>
       <StyledText>
+        <p>I develop modern and progressive web applications using React and Node.</p>
         <p>
-          I am a Web Developer from{' '}
-          <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/djXpTJuuHiP2">
-            Czechia
-          </a>. I develop modern and progressive web applications with{' '}
-          <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/">
-            React
+          I learned C, Haskell, Java and Go before I started to fully focus on building applications
+          in JavaScript.
+        </p>
+        <p>
+          Currently I am working for{' '}
+          <a href="https://www.kiwi.com" target="_blank" rel="noopener noreferrer">
+            Kiwi.com
           </a>{' '}
-          and{' '}
-          <a target="_blank" rel="noopener noreferrer" href="https://nodejs.org/en/">
-            Node
-          </a>.
-        </p>
-        <p>
-          I got into programming in elementary school and I have always enjoyed creating interactive
-          applications.
-        </p>
-        <p>
-          I learned C, Haskell, Java and Go before I decided to fully focus on building modern
-          applications in JavaScript.
+          located in Brno, Czech Republic.
         </p>
       </StyledText>
     </StyledContentWrapper>
