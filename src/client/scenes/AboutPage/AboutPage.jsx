@@ -48,7 +48,7 @@ const StyledText = styled.div`
   color: rgb(33, 33, 33);
   font-weight: 300;
   @media ${tiny} {
-    font-size: 16px;
+    font-size: 17px;
   }
 `
 
@@ -71,12 +71,12 @@ const AboutPage = () => (
           </a>.
         </p>
         <p>
-          I started programming in elementary school and always enjoyed creating interactive
+          I got into programming in elementary school and I have always enjoyed creating interactive
           applications.
         </p>
         <p>
-          I learned C, Haskell, Java and Go before I decided to fully focus on building modern Web
-          Applications in JavaScript.
+          I learned C, Haskell, Java and Go before I decided to fully focus on building modern
+          applications in JavaScript.
         </p>
       </StyledText>
     </StyledContentWrapper>
