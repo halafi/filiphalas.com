@@ -3,11 +3,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import { tiny, small, large } from '../../common/consts/styles/breakpoints'
+import ScrollToPrevious from '../../common/components/ScrollToPrevious/ScrollToPrevious'
 
 const StyledRoot = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 0 1 auto;
   padding: 18px 27px;
   min-height: 100vh;
   a {
@@ -18,6 +18,7 @@ const StyledRoot = styled.div`
 const StyledContentWrapper = styled.div`
   padding-top: 36px;
   margin: 0 4px;
+  flex: 1 0 auto;
   @media ${tiny} {
     margin: 0 16px;
   }
@@ -80,6 +81,7 @@ const AboutPage = () => (
         </p>
       </StyledText>
     </StyledContentWrapper>
+    <ScrollToPrevious pageSelector="#landing-page" />
   </StyledRoot>
 )
 export default AboutPage
