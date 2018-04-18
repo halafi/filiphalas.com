@@ -13,7 +13,7 @@ const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: ${props => props.theme.navAlpha};
   z-index: 1;
 `
 
@@ -34,7 +34,7 @@ const StyledMenuItem = styled.div`
 
   &:hover {
     cursor: pointer;
-    border-bottom: 2px solid rgb(96, 125, 139);
+    border-bottom: 2px solid ${props => props.theme.colorPrimary};
   }
   @media ${tiny} {
     font-size: 20px;
@@ -65,10 +65,8 @@ class Navbar extends PureComponent {
     return (
       <StyledNav>
         <StyledMenu>
-          {/*<StyledMenuItem onClick={() => this.scrollToPage('#landing-page')}>Home</StyledMenuItem>*/}
+          <StyledMenuItem onClick={() => scrollToPage('#landing-page')}>Home</StyledMenuItem>
           <StyledMenuItem onClick={() => scrollToPage('#about-page')}>About</StyledMenuItem>
-          {/*<StyledMenuItem>Projects</StyledMenuItem>*/}
-          {/*<StyledMenuItem>Contact</StyledMenuItem>*/}
         </StyledMenu>
       </StyledNav>
     )

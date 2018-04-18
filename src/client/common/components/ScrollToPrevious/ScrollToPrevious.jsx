@@ -18,7 +18,7 @@ const StyledArrow = styled.div`
   margin: 0 auto;
   padding-bottom: 36px;
   animation: bounce 2s infinite;
-  color: rgb(96, 125, 139);
+  color: ${props => props.theme.colorPrimary};
 
   @keyframes bounce {
     0%,
