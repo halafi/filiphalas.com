@@ -30,6 +30,7 @@ const StyledMenuItem = styled.div`
   margin: 0 16px;
   padding: 4px 0;
   border-bottom: 2px solid transparent;
+  user-select: none;
 
   &:hover {
     cursor: pointer;

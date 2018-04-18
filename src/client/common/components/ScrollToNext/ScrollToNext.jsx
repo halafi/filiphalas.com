@@ -10,6 +10,7 @@ type Props = {
 
 const StyledRoot = styled.div`
   cursor: pointer;
+  user-select: none;
 `
 
 const StyledArrow = styled.div`
