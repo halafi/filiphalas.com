@@ -4,12 +4,9 @@ import LandingPage from './scenes/LandingPage/LandingPage'
 import AboutPage from './scenes/AboutPage/AboutPage'
 import Navbar from './common/components/Navbar/Navbar'
 import Footer from './common/components/Footer/Footer'
+import themes from './common/consts/styles/themes'
 
-const theme = {
-  colorPrimary: 'rgb(96, 125, 139)',
-  colorSecondary: 'rgb(33, 33, 33)',
-  navAlpha: 'rgba(255, 255, 255, 0.75)',
-}
+const theme = themes[0]
 
 // Keep root / global CSS here
 // eslint-disable-next-line no-unused-expressions

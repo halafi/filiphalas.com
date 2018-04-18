@@ -46,7 +46,7 @@ const StyledTitle = styled.h1`
 const StyledText = styled.div`
   font-size: 15px;
   line-height: 27px;
-  color: ${theme => theme.colorSecondary};
+  color: ${props => props.theme.colorSecondary};
   font-weight: 300;
   @media ${tiny} {
     font-size: 17px;
