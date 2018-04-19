@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 import LandingPage from './scenes/LandingPage/LandingPage'
 import AboutPage from './scenes/AboutPage/AboutPage'
-import Navbar from './common/components/Navbar/Navbar'
 import Footer from './common/components/Footer/Footer'
 import themes from './common/consts/styles/themes'
 
@@ -31,7 +30,7 @@ injectGlobal`
 const Root = () => (
   <ThemeProvider theme={theme}>
     <div>
-      <Navbar />
+      {/*<Navbar />*/}
       <LandingPage />
       <AboutPage />
       <Footer />
