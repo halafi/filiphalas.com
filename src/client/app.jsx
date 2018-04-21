@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { injectGlobal, ThemeProvider } from 'styled-components'
-import LandingPage from './scenes/LandingPage/LandingPage'
-import AboutPage from './scenes/AboutPage/AboutPage'
-import Footer from './common/components/Footer/Footer'
+import Root from './scenes/Root'
 import themes from './common/consts/styles/themes'
 
 const theme = themes[0]
@@ -27,15 +27,15 @@ injectGlobal`
   }
 `
 
-const Root = () => (
-  <ThemeProvider theme={theme}>
-    <div>
-      {/*<Navbar />*/}
-      <LandingPage />
-      <AboutPage />
-      <Footer />
-    </div>
-  </ThemeProvider>
+ReactDOM.hydrate(
+  <Router>
+    <ThemeProvider theme={theme}>
+      <Root />
+    </ThemeProvider>
+  </Router>,
+  document.getElementById('root'),
 )
 
-export default Root
+if (module.hot) {
+  module.hot.accept()
+}

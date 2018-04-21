@@ -2,8 +2,8 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { tiny, small, large } from '../../common/consts/styles/breakpoints'
-import ScrollToPrevious from '../../common/components/ScrollToPrevious/ScrollToPrevious'
+import { tiny, small, large } from '../../../common/consts/styles/breakpoints'
+import ScrollToPrevious from '../../../common/components/ScrollToPrevious/ScrollToPrevious'
 
 const StyledRoot = styled.div`
   display: flex;

@@ -1,6 +1,7 @@
-const isSmoothScrollSupported = ((document || {}).documentElement || {}).style
-  ? 'scrollBehavior' in document.documentElement.style
-  : false
+const isSmoothScrollSupported =
+  typeof document !== 'undefined' && document.documentElement && document.documentElement.style
+    ? 'scrollBehavior' in document.documentElement.style
+    : false
 
 export const toTop = () => {
   if (isSmoothScrollSupported) {

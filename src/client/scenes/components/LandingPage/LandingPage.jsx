@@ -2,8 +2,8 @@
 
 import React, { PureComponent } from 'react'
 import styled from 'styled-components'
-import { tiny, small, large } from '../../common/consts/styles/breakpoints'
-import ScrollToNext from '../../common/components/ScrollToNext/ScrollToNext'
+import { tiny, small, large } from '../../../common/consts/styles/breakpoints'
+import ScrollToNext from '../../../common/components/ScrollToNext/ScrollToNext'
 
 const StyledRoot = styled.main`
   display: flex;
