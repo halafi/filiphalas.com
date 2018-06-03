@@ -33,7 +33,7 @@ const Root = () => (
       {/*<Navbar />*/}
       <LandingPage />
       <AboutPage />
-      <Footer />
+      {/*<Footer />*/}
     </div>
   </ThemeProvider>
 )

@@ -111,13 +111,7 @@ class LandingPage extends PureComponent {
         <StyledContentWrapper>
           <StyledIntro>Hi, I am Filip.</StyledIntro>
           <StyledTagline>
-            Frontend Developer @<a
-              href="https://www.kiwi.com/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Kiwi.com
-            </a>{' '}
+            Frontend Developer {' '}
             | React <i className="fab fa-react" /> and Tech Enthusiast
           </StyledTagline>
           <StyledLinkedBar>

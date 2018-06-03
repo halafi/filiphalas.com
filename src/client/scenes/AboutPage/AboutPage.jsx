@@ -60,15 +60,16 @@ const AboutPage = () => (
       <StyledText>
         <p>I develop modern and progressive web applications using React and Node.</p>
         <p>
-          I learned C, Haskell, Java and Go before I started to fully focus on building applications
-          in JavaScript.
+          I am available for web development and consulting, contact me at{' '}
+          <a href="mailto:filiphalas74@gmail.com" target="_blank" rel="noopener noreferrer">
+            filiphalas74@gmail.com
+          </a>.
         </p>
         <p>
-          Currently I am working for{' '}
-          <a href="https://www.kiwi.com" target="_blank" rel="noopener noreferrer">
-            Kiwi.com
-          </a>{' '}
-          located in Brno, Czech Republic.
+          If you need a full stack mobile and web solution, do not hesitate to contact our team at{' '}
+          <a rel="noopener noreferrer" target="_blank" href="http://www.hexefy.com/">
+            www.hexefy.com
+          </a>.
         </p>
       </StyledText>
     </StyledContentWrapper>
