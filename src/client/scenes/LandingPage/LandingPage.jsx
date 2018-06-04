@@ -111,8 +111,7 @@ class LandingPage extends PureComponent {
         <StyledContentWrapper>
           <StyledIntro>Hi, I am Filip.</StyledIntro>
           <StyledTagline>
-            Frontend Developer {' '}
-            | React <i className="fab fa-react" /> and Tech Enthusiast
+            Frontend Developer | React <i className="fab fa-react" /> and Node <i className="fab fa-node-js" /> | Remote (EU)
           </StyledTagline>
           <StyledLinkedBar>
             <StyledLink target="_blank" rel="noopener noreferrer" href="https://github.com/halafi">

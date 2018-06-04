@@ -61,8 +61,8 @@ const AboutPage = () => (
         <p>I develop modern and progressive web applications using React and Node.</p>
         <p>
           I am available for web development and consulting, contact me at{' '}
-          <a href="mailto:info@filiphalas.com" target="_blank" rel="noopener noreferrer">
-            info@filiphalas.com
+          <a href="mailto:fiha@filiphalas.com" target="_blank" rel="noopener noreferrer">
+            fiha@filiphalas.com
           </a>.
         </p>
         <p>
