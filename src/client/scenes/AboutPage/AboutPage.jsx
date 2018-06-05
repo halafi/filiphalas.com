@@ -60,13 +60,13 @@ const AboutPage = () => (
       <StyledText>
         <p>I develop modern and progressive web applications using React and Node.</p>
         <p>
-          I am available for web development and consulting, contact me at{' '}
+          For web development and consulting, contact me at{' '}
           <a href="mailto:fiha@filiphalas.com" target="_blank" rel="noopener noreferrer">
             fiha@filiphalas.com
           </a>.
         </p>
         <p>
-          If you need a full stack mobile and web solution, do not hesitate to contact our team at{' '}
+          If you need a full stack mobile and web solution, do not hesitate to contact our team{' '}
           <a rel="noopener noreferrer" target="_blank" href="http://www.hexefy.com/">
             www.hexefy.com
           </a>.
