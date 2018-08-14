@@ -1,3 +1,4 @@
+// @flow
 export const tiny = '(min-width: 425px)'
 export const small = '(min-width: 600px)'
 export const medium = '(min-width: 960px)'

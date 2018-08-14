@@ -1,3 +1,5 @@
+// @flow
+
 const THEMES = [
   {
     colorPrimary: 'rgb(96, 125, 139)',

@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
+// @flow
+import React from 'react'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 import LandingPage from './scenes/LandingPage/LandingPage'
 import AboutPage from './scenes/AboutPage/AboutPage'
-import Footer from './common/components/Footer/Footer'
+// import Footer from './common/components/Footer/Footer'
 import themes from './common/consts/styles/themes'
 
 const theme = themes[0]
@@ -23,17 +24,17 @@ injectGlobal`
     padding: 0;
   }
   ::-webkit-scrollbar {
-    display: none; 
+    display: none;
   }
 `
 
 const Root = () => (
   <ThemeProvider theme={theme}>
     <div>
-      {/*<Navbar />*/}
+      {/* <Navbar /> */}
       <LandingPage />
       <AboutPage />
-      {/*<Footer />*/}
+      {/* <Footer /> */}
     </div>
   </ThemeProvider>
 )

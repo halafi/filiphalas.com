@@ -1,6 +1,5 @@
 // @flow
-
-import React, { PureComponent } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { tiny, small, large } from '../../common/consts/styles/breakpoints'
 import ScrollToNext from '../../common/components/ScrollToNext/ScrollToNext'
@@ -104,46 +103,39 @@ const StyledContentWrapper = styled.div`
   padding: 18px 27px 18px;
 `
 
-class LandingPage extends PureComponent {
-  render() {
-    return (
-      <StyledRoot id="landing-page">
-        <StyledContentWrapper>
-          <StyledIntro>Hi, I am Filip.</StyledIntro>
-          <StyledTagline>
-            Frontend Developer | React <i className="fab fa-react" /> and Node <i className="fab fa-node-js" />
-          </StyledTagline>
-          <StyledLinkedBar>
-            <StyledLink target="_blank" rel="noopener noreferrer" href="https://github.com/halafi">
-              <i className="fab fa-github" />
-            </StyledLink>
-            <StyledLink
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://twitter.com/FilipHalas"
-            >
-              <i className="fab fa-twitter" />
-            </StyledLink>
-            <StyledLink
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://stackoverflow.com/users/4227313/halafi"
-            >
-              <i className="fab fa-stack-overflow" />
-            </StyledLink>
-            <StyledLink
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/filip-halas-a7928476/"
-            >
-              <i className="fab fa-linkedin" />
-            </StyledLink>
-          </StyledLinkedBar>
-        </StyledContentWrapper>
-        <ScrollToNext pageSelector="#about-page" />
-      </StyledRoot>
-    )
-  }
-}
+const LandingPage = () => (
+  <StyledRoot id="landing-page">
+    <StyledContentWrapper>
+      <StyledIntro>Hi, I am Filip.</StyledIntro>
+      <StyledTagline>
+        Frontend Developer | React <i className="fab fa-react" /> and Node{' '}
+        <i className="fab fa-node-js" />
+      </StyledTagline>
+      <StyledLinkedBar>
+        <StyledLink target="_blank" rel="noopener noreferrer" href="https://github.com/halafi">
+          <i className="fab fa-github" />
+        </StyledLink>
+        <StyledLink target="_blank" rel="noopener noreferrer" href="https://twitter.com/FilipHalas">
+          <i className="fab fa-twitter" />
+        </StyledLink>
+        <StyledLink
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://stackoverflow.com/users/4227313/halafi"
+        >
+          <i className="fab fa-stack-overflow" />
+        </StyledLink>
+        <StyledLink
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/filip-halas-a7928476/"
+        >
+          <i className="fab fa-linkedin" />
+        </StyledLink>
+      </StyledLinkedBar>
+    </StyledContentWrapper>
+    <ScrollToNext pageSelector="#about-page" />
+  </StyledRoot>
+)
 
 export default LandingPage

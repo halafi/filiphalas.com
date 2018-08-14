@@ -1,5 +1,4 @@
 // @flow
-
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { toElement as scrollToElement } from '../../utils/scroll'

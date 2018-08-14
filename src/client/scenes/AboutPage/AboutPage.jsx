@@ -1,5 +1,4 @@
 // @flow
-
 import React from 'react'
 import styled from 'styled-components'
 import { tiny, small, large } from '../../common/consts/styles/breakpoints'
@@ -63,12 +62,6 @@ const AboutPage = () => (
           For web development and consulting contact me at{' '}
           <a href="mailto:info@filiphalas.com" target="_blank" rel="noopener noreferrer">
             info@filiphalas.com
-          </a>.
-        </p>
-        <p>
-          If you need a full stack mobile and web solution, do not hesitate to contact our team{' '}
-          <a rel="noopener noreferrer" target="_blank" href="http://www.hexefy.com/">
-            www.hexefy.com
           </a>.
         </p>
       </StyledText>

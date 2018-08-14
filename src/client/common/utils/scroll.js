@@ -1,3 +1,4 @@
+// @flow
 const isSmoothScrollSupported = ((document || {}).documentElement || {}).style
   ? 'scrollBehavior' in document.documentElement.style
   : false
