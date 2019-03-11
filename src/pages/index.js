@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 import typed from 'typed.js';
 // import { Link } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/layout';
 import { tiny, small, large } from '../records/Breakpoints';
 
 const StyledIntro = styled.div`
@@ -88,7 +88,11 @@ const StyledLink = styled.a`
 class IndexPage extends React.Component {
   componentDidMount = () => {
     const options = {
-      strings: ["Hi, I am Filip^7500", "Hola, soy Filip^5000", "Hallo, ich bin Filip^5000"],
+      strings: [
+        'Hi, I am Filip^7500',
+        'Hola, soy Filip^5000',
+        'Hallo, ich bin Filip^5000',
+      ],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
@@ -96,7 +100,7 @@ class IndexPage extends React.Component {
     };
     this.typed = new typed(this.el, options);
     this.typed.start();
-  }
+  };
 
   componentWillUnmount() {
     this.typed.destroy();
@@ -105,42 +109,54 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <StyledIntro><span ref={(el) => { this.el = el; }}></span></StyledIntro>
-        <StyledTagline>
-        Full-Stack Web Developer (React, Node)
-        </StyledTagline>
+        <StyledIntro>
+          <span
+            ref={el => {
+              this.el = el;
+            }}
+          />
+        </StyledIntro>
+        <StyledTagline>Full-Stack Web Developer (React, Node)</StyledTagline>
         <StyledLinkedBar>
-          <StyledLink target="_blank" rel="noopener noreferrer" href="https://github.com/halafi">
+          <StyledLink
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://github.com/halafi"
+          >
             <i className="fab fa-github" />
           </StyledLink>
-          <StyledLink target="_blank" rel="noopener noreferrer" href="https://twitter.com/FilipHalas">
+          <StyledLink
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://twitter.com/FilipHalas"
+          >
             <i className="fab fa-twitter" />
           </StyledLink>
           <StyledLink
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             href="https://stackoverflow.com/users/4227313/halafi"
           >
             <i className="fab fa-stack-overflow" />
           </StyledLink>
           <StyledLink
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             href="https://www.linkedin.com/in/filip-halas-a7928476/"
           >
             <i className="fab fa-linkedin" />
           </StyledLink>
           <StyledLink
             target="_blank"
-            rel="noopener noreferrer"
-            href="mailto:info@filiphalas.com"
+            rel="noopener noreferrer nofollow"
+            href="mailto:filiphalas74@gmail.com"
           >
             <i className="far fa-envelope" />
           </StyledLink>
         </StyledLinkedBar>
       </Layout>
-    )
+    );
   }
 }
 
-export default IndexPage
+export default IndexPage;
