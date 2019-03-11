@@ -33,7 +33,8 @@ const StyledContentWrapper = styled.div`
 //   margin: 20px;
 // `;
 
-const description = 'JS Developer - Filip Halas';
+const description =
+  'JavaScript Developer from Czechia - Filip Halas. I do web apps with React and static sites with Gatsby. Working in travel and fintech. Available: Remote, EU, Czech Republic.';
 
 const Layout = ({ children }) => (
   <StaticQuery

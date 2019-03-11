@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Filip Halas - JS Developer',
+    siteUrl: 'https://filiphalas.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -17,5 +18,26 @@ module.exports = {
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-136091005-1',
+        head: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [
+          {
+            userAgent: '*',
+            allow: ['/'],
+          },
+        ],
+      },
+    },
   ],
-}
+};

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import typed from 'typed.js';
 // import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Layout from '../components/layout';
 import { tiny, small, large } from '../records/Breakpoints';
 
@@ -59,7 +60,7 @@ const StyledLinkedBar = styled.div`
   }
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled(OutboundLink)`
   display: inline-block;
   box-shadow: 0 0 1px transparent;
   transform: perspective(1px) translateZ(0);
@@ -89,9 +90,8 @@ class IndexPage extends React.Component {
   componentDidMount = () => {
     const options = {
       strings: [
-        'Hi, I am Filip^7500',
-        'Hola, soy Filip^5000',
-        'Hallo, ich bin Filip^5000',
+        'Hi, I am Filip^6000',
+        'I make Web Apps^5000',
       ],
       typeSpeed: 50,
       backSpeed: 50,
@@ -149,10 +149,17 @@ class IndexPage extends React.Component {
           <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
+            href="https://www.producthunt.com/@filiphalas"
+          >
+            <i className="fab fa-product-hunt" />
+          </StyledLink>
+          {/* <StyledLink
+            target="_blank"
+            rel="noopener noreferrer nofollow"
             href="mailto:filiphalas74@gmail.com"
           >
             <i className="far fa-envelope" />
-          </StyledLink>
+          </StyledLink> */}
         </StyledLinkedBar>
       </Layout>
     );
