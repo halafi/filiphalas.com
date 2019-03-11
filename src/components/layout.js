@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
 
-import './normalize.css'
-import './layout.css'
+import './normalize.css';
+import './layout.css';
 
 const StyledRoot = styled.div`
   display: flex;
@@ -26,12 +26,14 @@ const StyledContentWrapper = styled.div`
   padding: 18px 27px 18px;
 `;
 
-const StyledFooter = styled.footer`
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-`;
+// const StyledFooter = styled.footer`
+//   font-size: 18px;
+//   display: flex;
+//   justify-content: center;
+//   margin: 20px;
+// `;
+
+const description = 'JS Developer - Filip Halas';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -48,27 +50,21 @@ const Layout = ({ children }) => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'JS Developer - Filip Halas' },
-            { name: 'keywords', content: 'filip halas,filip,halas,javascript,js,react,reactjs,node,nodejs,developer,remote,freelance' },
-            { name: 'copyright', content: 'Filip Halas' },
-          ]}
+          meta={[{ name: 'description', content: description }]}
         >
           <html lang="en" />
         </Helmet>
         <StyledRoot>
-          <StyledContentWrapper>
-            {children}
-          </StyledContentWrapper>
-          <StyledFooter>Powered by&nbsp;<a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">GatsbyJS</a></StyledFooter>
+          <StyledContentWrapper>{children}</StyledContentWrapper>
+          {/* <StyledFooter>Powered by&nbsp;<a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">GatsbyJS</a></StyledFooter> */}
         </StyledRoot>
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
