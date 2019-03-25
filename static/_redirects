@@ -1,0 +1,3 @@
+# Redirect default Netlify subdomain to primary domain
+http://filiphalas.netlify.com/*  https://filiphalas.com/:splat 301!
+https://filiphalas.netlify.com/* https://filiphalas.com/:splat 301!
