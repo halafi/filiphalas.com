@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Filip Halas - JS Developer',
+    title: 'Filip Halas - Full-Stack Web Developer (React, Node, SEO)',
     siteUrl: 'https://filiphalas.com',
   },
   plugins: [
