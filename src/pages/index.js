@@ -1,10 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import typed from 'typed.js';
+import React from "react";
+import styled from "styled-components";
+import typed from "typed.js";
 // import { Link } from 'gatsby'
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import Layout from '../components/layout';
-import { tiny, small, large } from '../records/Breakpoints';
+import { OutboundLink } from "gatsby-plugin-google-analytics";
+import Layout from "../components/layout";
+import { tiny, small, large } from "../records/Breakpoints";
+
+// const StyledProjects = styled.div`
+//   display: flex;
+//   margin-top: 100px;
+//   justify-content: center;
+// `;
 
 const StyledIntro = styled.div`
   font-size: 48px;
@@ -89,14 +95,11 @@ const StyledLink = styled(OutboundLink)`
 class IndexPage extends React.Component {
   componentDidMount = () => {
     const options = {
-      strings: [
-        'Hi, I am Filip^6000',
-        'I make Web Apps^5000',
-      ],
+      strings: ["Hi, I am Filip^6000", "I make Web Apps^5000"],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
-      cursorChar: ' ✍️',
+      cursorChar: " ✍️"
     };
     this.typed = new typed(this.el, options);
     this.typed.start();
@@ -142,16 +145,23 @@ class IndexPage extends React.Component {
           <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
-            href="https://www.linkedin.com/in/filip-halas-a7928476/"
+            href="https://medium.com/@filiphalas"
           >
-            <i className="fab fa-linkedin" />
+            <i className="fab fa-medium" />
           </StyledLink>
           <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
-            href="https://www.producthunt.com/@filiphalas"
+            href="https://www.producthunt.com/@filip_halas"
           >
             <i className="fab fa-product-hunt" />
+          </StyledLink>
+          <StyledLink
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://www.linkedin.com/in/filip-halas-a7928476/"
+          >
+            <i className="fab fa-linkedin" />
           </StyledLink>
           {/* <StyledLink
             target="_blank"
@@ -161,6 +171,15 @@ class IndexPage extends React.Component {
             <i className="far fa-envelope" />
           </StyledLink> */}
         </StyledLinkedBar>
+        {/* <StyledProjects>
+          <a
+            href="https://www.kiwi.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <img src="/images/kiwi-logo.png" alt="kiwi.com" />
+          </a>
+        </StyledProjects> */}
       </Layout>
     );
   }
