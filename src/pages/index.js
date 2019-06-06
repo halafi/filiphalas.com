@@ -142,13 +142,13 @@ class IndexPage extends React.Component {
           >
             <i className="fab fa-stack-overflow" />
           </StyledLink>
-          <StyledLink
+          {/* <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
             href="https://medium.com/@filiphalas"
           >
             <i className="fab fa-medium" />
-          </StyledLink>
+          </StyledLink> */}
           <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
