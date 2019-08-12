@@ -46,7 +46,7 @@ const StyledContentWrapper = styled.div`
 // `;
 
 const description =
-  "JavaScript Developer from Czechia - Filip Halas. I do web apps with React and static sites with Gatsby. Working in travel and fintech. Available: Remote, EU, Czech Republic.";
+  "JavaScript Developer located in EU. I make Web Apps with React and static sites with Gatsby. Working in travel industry and fintech. Available remotely.";
 
 const Layout = ({ children }) => (
   <StaticQuery
