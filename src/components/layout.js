@@ -1,11 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { StaticQuery, graphql } from "gatsby";
+import WebDeveloperSvg from "../images/web-developer.svg";
+import { large, medium } from "../records/Breakpoints";
 
-import './normalize.css';
-import './layout.css';
+import "./normalize.css";
+import "./layout.css";
 
 const StyledRoot = styled.div`
   display: flex;
@@ -15,6 +17,16 @@ const StyledRoot = styled.div`
   min-height: 100vh;
   a {
     color: inherit;
+  }
+
+  @media ${medium} {
+    background-image: url(${WebDeveloperSvg});
+    background-repeat: no-repeat;
+    background-size: 380px auto;
+    background-position: 95% 95%;
+  }
+  @media ${large} {
+    background-size: 28% auto;
   }
 `;
 
@@ -34,7 +46,7 @@ const StyledContentWrapper = styled.div`
 // `;
 
 const description =
-  'JavaScript Developer from Czechia - Filip Halas. I do web apps with React and static sites with Gatsby. Working in travel and fintech. Available: Remote, EU, Czech Republic.';
+  "JavaScript Developer from Czechia - Filip Halas. I do web apps with React and static sites with Gatsby. Working in travel and fintech. Available: Remote, EU, Czech Republic.";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -51,7 +63,7 @@ const Layout = ({ children }) => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
-          meta={[{ name: 'description', content: description }]}
+          meta={[{ name: "description", content: description }]}
         >
           <html lang="en" />
         </Helmet>
@@ -65,7 +77,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default Layout;
