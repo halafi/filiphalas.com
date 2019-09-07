@@ -6,11 +6,20 @@ import { OutboundLink } from "gatsby-plugin-google-analytics";
 import Layout from "../components/layout";
 import { tiny, small, large } from "../records/Breakpoints";
 
-// const StyledProjects = styled.div`
-//   display: flex;
-//   margin-top: 100px;
-//   justify-content: center;
-// `;
+const StyledProjects = styled.div`
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  flex-direction: column;
+  a {
+    line-height: 1.33;
+    font-size: 14px;
+  }
+`;
 
 const StyledIntro = styled.div`
   font-size: 48px;
@@ -31,7 +40,7 @@ const StyledIntro = styled.div`
   }
 `;
 
-const StyledTagline = styled.div`
+const StyledTagline = styled.h1`
   font-size: 18px;
   font-weight: 400;
   margin: 18px;
@@ -92,6 +101,12 @@ const StyledLink = styled(OutboundLink)`
   }
 `;
 
+const H3 = styled.h3`
+  font-size: 17px;
+  margin-block-start: 0;
+  margin-block-end: 12px;
+`;
+
 class IndexPage extends React.Component {
   componentDidMount = () => {
     const options = {
@@ -142,13 +157,13 @@ class IndexPage extends React.Component {
           >
             <i className="fab fa-stack-overflow" />
           </StyledLink>
-          {/* <StyledLink
+          <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
             href="https://medium.com/@filiphalas"
           >
             <i className="fab fa-medium" />
-          </StyledLink> */}
+          </StyledLink>
           <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
@@ -171,15 +186,19 @@ class IndexPage extends React.Component {
             <i className="far fa-envelope" />
           </StyledLink> */}
         </StyledLinkedBar>
-        {/* <StyledProjects>
+        <StyledProjects>
+          <H3>See my latest side projects</H3>
           <a
-            href="https://www.kiwi.com/"
             target="_blank"
-            rel="noopener noreferrer nofollow"
+            rel="noopener noreferrer"
+            href="https://remoteseer.net"
           >
-            <img src="/images/kiwi-logo.png" alt="kiwi.com" />
+            Aggregator of remote jobs
           </a>
-        </StyledProjects> */}
+          <a target="_blank" rel="noopener noreferrer" href="https://pfolio.cz">
+            Czech investment blog
+          </a>
+        </StyledProjects>
       </Layout>
     );
   }
