@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import typed from "typed.js";
 // import { Link } from 'gatsby'
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import Layout from "../components/layout";
@@ -11,12 +12,9 @@ import { tiny, small, large } from "../records/Breakpoints";
 //   justify-content: center;
 // `;
 
-const StyledIntro = styled.h1`
+const StyledIntro = styled.div`
   font-size: 48px;
   font-weight: 700;
-  padding-top: 0;
-  margin-block-end: 0;
-  margin-block-start: 0;
   padding-bottom: 8px;
   @media ${tiny} {
     font-size: 58px;
@@ -29,10 +27,11 @@ const StyledIntro = styled.h1`
   @media ${large} {
     font-size: 78px;
     padding-bottom: 16px;
+    padding-left: 97px;
   }
 `;
 
-const StyledTagline = styled.h2`
+const StyledTagline = styled.div`
   font-size: 18px;
   font-weight: 400;
   margin: 18px;
@@ -94,10 +93,32 @@ const StyledLink = styled(OutboundLink)`
 `;
 
 class IndexPage extends React.Component {
+  componentDidMount = () => {
+    const options = {
+      strings: ["Hi, I am Filip^6000", "I make Web Apps^5000"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+      cursorChar: " ✍️"
+    };
+    this.typed = new typed(this.el, options);
+    this.typed.start();
+  };
+
+  componentWillUnmount() {
+    this.typed.destroy();
+  }
+
   render() {
     return (
       <Layout>
-        <StyledIntro>Hi, I am Filip</StyledIntro>
+        <StyledIntro>
+          <span
+            ref={el => {
+              this.el = el;
+            }}
+          />
+        </StyledIntro>
         <StyledTagline>Full-Stack Web Developer (React, Node)</StyledTagline>
         <StyledLinkedBar>
           <StyledLink
