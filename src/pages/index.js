@@ -186,15 +186,28 @@ class IndexPage extends React.Component {
             <i className="far fa-envelope" />
           </StyledLink> */}
         </StyledLinkedBar>
+        {/* <StyledProjects>
+          <H3>Open source contributions</H3>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/osano/cookieconsent"
+          >
+            Cookie Consent
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/dominikchrastek/react-dates-lite">
+            React Dates Lite
+          </a>
+        </StyledProjects> */}
         <StyledProjects>
           <H3>See my latest side projects</H3>
-          <a
+          {/* <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://remoteseer.net"
           >
             Aggregator of remote jobs
-          </a>
+          </a> */}
           <a target="_blank" rel="noopener noreferrer" href="https://pfolio.cz">
             Czech investment blog
           </a>
