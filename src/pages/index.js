@@ -146,10 +146,17 @@ class IndexPage extends React.Component {
           <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
+            href="https://gitlab.com/halafi"
+          >
+            <i className="fab fa-gitlab " />
+          </StyledLink>
+          {/* <StyledLink
+            target="_blank"
+            rel="noopener noreferrer nofollow"
             href="https://twitter.com/FilipHalas"
           >
             <i className="fab fa-twitter" />
-          </StyledLink>
+          </StyledLink> */}
           <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
@@ -157,20 +164,20 @@ class IndexPage extends React.Component {
           >
             <i className="fab fa-stack-overflow" />
           </StyledLink>
-          <StyledLink
+          {/* <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
             href="https://medium.com/@filiphalas"
           >
             <i className="fab fa-medium" />
-          </StyledLink>
-          <StyledLink
+          </StyledLink> */}
+          {/* <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
             href="https://www.producthunt.com/@filip_halas"
           >
             <i className="fab fa-product-hunt" />
-          </StyledLink>
+          </StyledLink> */}
           <StyledLink
             target="_blank"
             rel="noopener noreferrer nofollow"
