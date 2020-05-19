@@ -16,24 +16,28 @@ const StyledProjects = styled.div`
   justify-content: center;
   flex-direction: column;
   a {
-    line-height: 1.33;
+    line-height: 1.42;
     font-size: 14px;
   }
 `;
 
 const StyledIntro = styled.div`
+  margin-top: 100px;
   font-size: 48px;
   font-weight: 700;
   padding-bottom: 8px;
   @media ${tiny} {
+    margin-top: 150px;
     font-size: 58px;
     padding-bottom: 10px;
   }
   @media ${small} {
+    margin-top: 200px;
     font-size: 68px;
     padding-bottom: 12px;
   }
   @media ${large} {
+    margin-top: 250px;
     font-size: 78px;
     padding-bottom: 16px;
     padding-left: 97px;
@@ -102,7 +106,7 @@ const StyledLink = styled(OutboundLink)`
 `;
 
 const H3 = styled.h3`
-  font-size: 17px;
+  font-size: 18px;
   margin-block-start: 0;
   margin-block-end: 12px;
 `;
@@ -114,7 +118,7 @@ class IndexPage extends React.Component {
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
-      cursorChar: " ✍️"
+      cursorChar: " ✍️",
     };
     this.typed = new typed(this.el, options);
     this.typed.start();
@@ -129,7 +133,7 @@ class IndexPage extends React.Component {
       <Layout>
         <StyledIntro>
           <span
-            ref={el => {
+            ref={(el) => {
               this.el = el;
             }}
           />
@@ -215,8 +219,22 @@ class IndexPage extends React.Component {
           >
             Aggregator of remote jobs
           </a> */}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://minesweeper2k20.web.app"
+          >
+            Minesweeper PWA
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://play.google.com/store/apps/details?id=com.filiphalas.minesweeper&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+          >
+            Minesweeper PWA on Google Play
+          </a>
           <a target="_blank" rel="noopener noreferrer" href="https://pfolio.cz">
-            Czech investment blog
+            Investment and Fintech blog
           </a>
         </StyledProjects>
       </Layout>

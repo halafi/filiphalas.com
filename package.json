@@ -5,18 +5,18 @@
   "author": "Filip Halas",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.20.10",
-    "gatsby-plugin-google-analytics": "^2.2.2",
-    "gatsby-plugin-manifest": "^2.3.3",
-    "gatsby-plugin-offline": "^3.1.2",
-    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby": "^2.21.37",
+    "gatsby-plugin-google-analytics": "^2.3.1",
+    "gatsby-plugin-manifest": "^2.4.5",
+    "gatsby-plugin-offline": "^3.2.3",
+    "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-robots-txt": "^1.5.0",
-    "gatsby-plugin-sitemap": "^2.3.1",
-    "gatsby-plugin-styled-components": "^3.2.1",
+    "gatsby-plugin-sitemap": "^2.4.2",
+    "gatsby-plugin-styled-components": "^3.3.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
-    "styled-components": "^5.0.1",
+    "react-helmet": "^6.0.0",
+    "styled-components": "^5.1.0",
     "typed.js": "^2.0.11"
   },
   "license": "MIT",
@@ -27,6 +27,6 @@
     "format": "prettier --write '**/*.js'"
   },
   "devDependencies": {
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.5"
   }
 }
