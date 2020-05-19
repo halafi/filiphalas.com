@@ -226,13 +226,13 @@ class IndexPage extends React.Component {
           >
             Minesweeper PWA
           </a>
-          <a
+          {/* <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://play.google.com/store/apps/details?id=com.filiphalas.minesweeper&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
           >
             Minesweeper PWA on Google Play
-          </a>
+          </a> */}
           <a target="_blank" rel="noopener noreferrer" href="https://pfolio.cz">
             Investment and Fintech blog
           </a>
