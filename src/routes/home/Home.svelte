@@ -149,5 +149,5 @@
 <div class="projects">
   <h3>See my latest side projects</h3>
   <a target="_blank" rel="noopener noreferrer" href="https://minesweeper2k20.web.app">Minesweeper PWA</a>
-  <a target="_blank" rel="noopener noreferrer" href="https://pfolio.cz">Investment and Fintech blog</a>
+  <!-- <a target="_blank" rel="noopener noreferrer" href="https://pfolio.cz">Investment and Fintech blog</a> -->
 </div>
