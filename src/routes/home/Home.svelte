@@ -126,7 +126,7 @@
 <div class="intro">
   <TypedTitle hydrate-client={{}} />
 </div>
-<h1 class="tagLine">Full-Stack Web Developer (React, Node)</h1>
+<h1 class="tagLine">Full-Stack Web Developer (React, Svelte)</h1>
 <div class="linkedBar">
   <a class="link" target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/halafi">
     <i class="fab fa-github" />
