@@ -1,5 +1,5 @@
 <script>
-  export let routeHTML;
+  export let templateHtml;
 </script>
 
 <style>
@@ -60,5 +60,5 @@
 </svelte:head>
 
 <div class="container">
-  {@html routeHTML}
+  {@html templateHtml}
 </div>
