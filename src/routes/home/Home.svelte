@@ -148,6 +148,9 @@
     href="https://www.linkedin.com/in/filip-halas-a7928476/">
     <i class="fab fa-linkedin" />
   </a>
+  <a class="link" target="_blank" rel="noopener noreferrer nofollow" href="mailto:filip@filiphalas.com">
+    <i class="far fa-envelope" />
+  </a>
 </div>
 <div class="projects">
   <h3>Most recently worked on:</h3>
