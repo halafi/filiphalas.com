@@ -28,11 +28,10 @@
 </style>
 
 <svelte:head>
-  <title>Full-Stack Web Developer (React, Node)</title>
+  <title>Filip Halas - JavaScript Developer (React, Node)</title>
   <meta
     name="description"
-    content="JavaScript Developer from Czechia. I make Web Apps with React and static sites with Gatsby. Working in
-    travel industry and fintech. Available remotely." />
+    content="Hi 👋, I am a freelance software developer focused on state of the art web apps and static sites, working mainly with React and Svelte. Available remotely." />
   <link rel="icon" href="./favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link
@@ -47,7 +46,6 @@
   <!-- <link rel="stylesheet" href="{settings.locations.assets.replace('./public', '')}style.css" /> -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136091005-1">
-
   </script>
   <script>
     window.dataLayer = window.dataLayer || [];
