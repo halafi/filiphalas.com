@@ -141,6 +141,9 @@
     href="https://stackoverflow.com/users/4227313/halafi">
     <i class="fab fa-stack-overflow" />
   </a>
+  <a class="link" target="_blank" rel="noopener noreferrer nofollow" href="https://www.hackerrank.com/halafi">
+    <i class="fab fa-hackerrank" />
+  </a>
   <a
     class="link"
     target="_blank"
