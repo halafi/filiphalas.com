@@ -1,6 +1,6 @@
-/___ELDER___/
+___ELDER___
 elderjs/build/
-/node_modules/
+node_modules
 /public/
 /build/
 .DS_Store
