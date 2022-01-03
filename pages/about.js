@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
 import { parseISO, format, intervalToDuration } from "date-fns";
 import Main from "../layouts/Main";
 import stripHtml from "../lib/strip-html";
@@ -26,15 +25,7 @@ function About(props) {
     return (
       <div className="about">
         <div className="about-section">
-          <Image
-            alt="Filip"
-            src="/static/images/filip-bw.jpg"
-            width="336"
-            height="336"
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
-            priority
-          />
+          <img alt="Filip" src="/static/images/filip-bw.jpg" />
         </div>
         <div
           dangerouslySetInnerHTML={{ __html: description }}
