@@ -10,11 +10,11 @@ export default function Footer() {
       url: "https://github.com/halafi",
       icon: "ri-github-line",
     },
-    {
-      title: "GitLab",
-      url: "https://gitlab.com/halafi",
-      icon: "ri-gitlab-line",
-    },
+    // {
+    //   title: "GitLab",
+    //   url: "https://gitlab.com/halafi",
+    //   icon: "ri-gitlab-line",
+    // },
     {
       title: "linkedin",
       url: "https://www.linkedin.com/in/filip-halas-a7928476/",

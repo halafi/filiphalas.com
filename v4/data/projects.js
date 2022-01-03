@@ -26,6 +26,7 @@ const items = [
         title: "Minesweeper",
         description: "PWA built into Android APK (Chrome 72 powered)",
         url: "https://github.com/halafi/minesweeper",
+        icon: "flag-2",
       },
     ],
   },
@@ -59,7 +60,6 @@ const items = [
         description: "My zsh, neovim and tmux config files. Updated regularly.",
         url: "https://github.com/halafi/dotfiles",
         icon: "star",
-        stats: "10+ stars",
       },
     ],
   },
@@ -78,6 +78,9 @@ const items = [
       {
         title: "Gomatch",
         url: "https://github.com/halafi/gomatch",
+        description:
+          "Match any number of patterns/events in single line log records.",
+        icon: "star",
       },
     ],
   },

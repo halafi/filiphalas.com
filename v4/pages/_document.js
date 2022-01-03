@@ -20,12 +20,7 @@ export default class extends Document {
           <meta content="summary_large_image" name="twitter:card" />
           <meta name="theme-color" content="#08070b" />
 
-          <link
-            rel="icon"
-            href="/favicon.svg"
-            sizes="any"
-            type="image/svg+xml"
-          />
+          <link rel="icon" href="/favicon.png" sizes="any" type="image/png" />
 
           <script
             async

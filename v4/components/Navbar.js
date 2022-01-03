@@ -6,16 +6,20 @@ import { useKBar } from "kbar";
 
 export default function Navbar() {
   const router = useRouter();
-  const pages = ["About", "Articles", "Projects", "Setup"];
+  const pages = ["About", "Projects", "Setup"];
   const [hovered, setHovered] = useState("");
   const { query } = useKBar();
 
   return (
     <AnimateSharedLayout>
       <header className="site-header">
-        <Link href="/">
-          <a className="btn-header btn-logo">z</a>
-        </Link>
+        <div className="nav-secondary">
+          <Link href="/">
+            <button className="btn-header btn-cmd btn-transparent">
+              <i className="ri-home-2-line" />
+            </button>
+          </Link>
+        </div>
 
         <nav className="site-nav">
           <ul>

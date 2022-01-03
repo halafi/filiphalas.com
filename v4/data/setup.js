@@ -100,12 +100,6 @@ const categories = [
           "Move and resize windows in macOS using keyboard shortcuts or snap areas.",
         url: "https://rectangleapp.com/",
       },
-      {
-        title: "Paw",
-        description:
-          "A native macOS app that facilitates triggering HTTP requests.",
-        url: "https://paw.cloud",
-      },
     ],
   },
 ];

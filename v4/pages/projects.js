@@ -9,7 +9,7 @@ import items from "../data/projects";
 export async function getStaticProps() {
   const meta = {
     title: "Projects | Filip Halas",
-    tagline: "Work. Hobby. Open Source.",
+    tagline: "Open Source Projects",
     gradientColor: "cyan-green",
     selectionColor: "green",
   };
@@ -19,7 +19,7 @@ export async function getStaticProps() {
 
 function Projects(props) {
   const renderFeatured = () => {
-    const featured = ["Elder.js", "test.vim", "dotfiles"];
+    const featured = ["Elder.js", "dotfiles", "Minesweeper", "Gomatch"];
 
     return items
       .map((item) => {
@@ -64,7 +64,7 @@ function Projects(props) {
   };
 
   const { title } = props;
-  const description = `I'm obsessed with side projects and <strong>building in public</strong>. Here you can navigate to <strong>${getTotalProjects()} different</strong> websites, apps, and libraries I built. Some projects are still active, others have been discontinued.`;
+  const description = `On this page you can find <strong>${getTotalProjects()} different</strong> open source apps and libraries I have built or contributed to over the course of my github career.`;
 
   return (
     <div className="single">

@@ -7,8 +7,8 @@ import categories from "../data/setup";
 export async function getStaticProps() {
   const meta = {
     title: "Setup | Filip Halas",
-    description: "Apps I use and would recommend to anyone to try out.",
-    tagline: "Editors. Tools. Apps.",
+    description: "Apps I use and that I would recommend to anyone to try out.",
+    tagline: "Mac OS X Setup",
     gradientColor: "yellow-pink",
     selectionColor: "orange",
   };
