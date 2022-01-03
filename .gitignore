@@ -1,8 +1,5 @@
-___ELDER___
-elderjs/build/
+.env
+.next
+.vercel
+auth.json
 node_modules
-/public/
-/build/
-.DS_Store
-.vscode
-
