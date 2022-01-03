@@ -11,7 +11,7 @@ export async function getStaticProps() {
     description:
       "<p><strong>Hi, I'm Filip.</strong> I first touched HTML and game development back in elementary school and studied IT and computer science ever since.</p><p>I'm currently helping startups grow as a <strong>Software Engineer</strong> at Capchase. Working with state of the art technologies. I'm originally from Czechia and currently <strong>travelling the Americas</strong>.</p><p><strong>I enjoy learning and builing stuff</strong>, working on open source and side projects. Besides work I like joggling, juggling and board games.</p>",
     tagline: "Who Am I",
-    gradientColor: "§yan-green",
+    gradientColor: "purple-cyan",
     selectionColor: "pink",
   };
 
