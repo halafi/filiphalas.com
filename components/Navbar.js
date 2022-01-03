@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <AnimateSharedLayout>
       <header className="site-header">
-        <div className="nav-secondary">
+        <div className="nav-left">
           <Link href="/">
             <button className="btn-header btn-cmd btn-transparent">
               <i className="ri-home-2-line" />

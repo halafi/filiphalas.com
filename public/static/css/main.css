@@ -227,9 +227,14 @@ kbd {
 .nav-secondary {
   display: flex;
   align-items: center;
-  padding-left: 12px;
   padding-right: 12px;
   margin-left: auto;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
 }
 
 svg {
