@@ -41,7 +41,7 @@ const items = [
   {
     jobTitle: "Software Engineer",
     company: "University of Luxembourg",
-    companyUrl: "https://www.ticketlens.com/",
+    companyUrl: "https://wwwfr.uni.lu/snt",
     startDate: "2015-08-01",
     endDate: "2016-01-31",
     location: "Remote",
