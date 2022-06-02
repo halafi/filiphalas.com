@@ -1,5 +1,15 @@
 const items = [
   {
+    year: "2022",
+    projects: [
+      {
+        title: "Tmux Colours: VSCode",
+        url: "https://github.com/halafi/tmux-colours-vscode",
+        description: "A tmux colour theme that looks like vscode.",
+      },
+    ],
+  },
+  {
     year: "2021",
     projects: [
       {
