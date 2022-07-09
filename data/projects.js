@@ -30,7 +30,7 @@ const items = [
           "Opinionated static site generator and web framework for Svelte",
         url: "https://github.com/Elderjs/elderjs",
         icon: "star",
-        stats: "1.7k+ stars",
+        stats: "2.0k+ stars",
       },
       {
         title: "Minesweeper",
@@ -67,7 +67,7 @@ const items = [
     projects: [
       {
         title: "dotfiles",
-        description: "My zsh, neovim and tmux config files. Updated regularly.",
+        description: "My shell, vim and tmux config files. Updated regularly.",
         url: "https://github.com/halafi/dotfiles",
         icon: "star",
       },
