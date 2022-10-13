@@ -4,6 +4,7 @@ const items = [
     company: "Capchase",
     companyUrl: "https://www.capchase.com/",
     startDate: "2021-01-25",
+    endDate: "2022-10-01",
     location: "Remote",
   },
   {
