@@ -5,11 +5,13 @@ import Main from "../layouts/Main";
 import stripHtml from "../lib/strip-html";
 import items from "../data/about";
 
+// I'm currently helping startups grow as a <strong>Software Engineer</strong> at Capchase.
+
 export async function getStaticProps() {
   const meta = {
     title: "About Filip Halas",
     description:
-      "<p><strong>Hi, I'm Filip.</strong> I first touched HTML and game development back in elementary school and am passionate about IT and computer science ever since.</p><p>I'm currently helping startups grow as a <strong>Software Engineer</strong> at Capchase. I'm originally from Czechia and currently <strong>based in Europe</strong>.</p><p><strong>I enjoy learning and building stuff</strong>, working on open source and side projects. Besides work I like juggling and board games.</p>",
+      "<p><strong>Hi, I'm Filip.</strong> I first touched HTML and game development back in elementary school and am passionate about IT and computer science ever since.</p><p>I'm originally from Czechia and currently <strong>travelling around Asia</strong>.</p><p><strong>I enjoy learning and building stuff</strong>, working on open source and side projects. Besides work I like to do sports and play board games.</p>",
     tagline: "Who Am I",
     gradientColor: "purple-cyan",
     selectionColor: "pink",
