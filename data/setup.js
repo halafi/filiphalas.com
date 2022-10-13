@@ -85,11 +85,6 @@ const categories = [
         url: "https://www.macbartender.com/Bartender4",
       },
       {
-        title: "Bitwarden",
-        description: "Free to use password manager",
-        url: "https://bitwarden.com/",
-      },
-      {
         title: "Commander One",
         description: "I grew up on Total Commander.",
         url: "https://ftp-mac.com/",
