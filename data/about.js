@@ -1,10 +1,17 @@
 const items = [
   {
+    jobTitle: "Senior Interface Engineer",
+    company: "Archipelo",
+    companyUrl: "https://archipelo.com/",
+    startDate: "2022-10-17",
+    location: "Remote",
+  },
+  {
     jobTitle: "Senior Software Engineer",
     company: "Capchase",
     companyUrl: "https://www.capchase.com/",
     startDate: "2021-01-25",
-    endDate: "2022-10-01",
+    endDate: "2022-09-30",
     location: "Remote",
   },
   {

@@ -32,7 +32,7 @@ function Home(props) {
             <div className="single">
               <h1>{title}</h1>
               <p>
-                <strong>Software Engineer at Capchase</strong>.<br />
+                <strong>Software Engineer at Archipelo</strong>.<br />
                 {description}.
               </p>
               <ShortcutHome />
