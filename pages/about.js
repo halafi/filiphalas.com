@@ -11,7 +11,7 @@ export async function getStaticProps() {
   const meta = {
     title: "About Filip Halas",
     description:
-      "<p><strong>Hi, I'm Filip.</strong> I first touched HTML and game development back in elementary school and am passionate about IT and computer science ever since.</p><p>I'm originally from Czechia and currently <strong>travelling around Asia</strong>.</p><p><strong>I enjoy learning and building stuff</strong>, working on open source and side projects. Besides work I like to do sports and play board games.</p>",
+      "<p><strong>Hi, I'm Filip.</strong> I first touched HTML and game development back in elementary school and am passionate about IT and computer science ever since.</p><p>I'm originally from Czechia and currently <strong>workactioning around Asia</strong>.</p><p><strong>I enjoy learning and building stuff</strong>, working on open source and side projects.</p><p>Besides programming I am interested in management, foreign languages and teaching.</p>",
     tagline: "Who Am I",
     gradientColor: "purple-cyan",
     selectionColor: "pink",
