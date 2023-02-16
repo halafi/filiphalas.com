@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "deploy": "vercel --prod"
+    "export": "next export"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",

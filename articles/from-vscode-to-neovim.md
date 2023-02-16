@@ -75,7 +75,7 @@ My recommended progression path to learn Vim would be as follows:
 5. Add Tmux to the mix
 6. Customize Neovim to be able to use it for ~99% of tasks you do in your current IDE
 
-Good tutorials for Vim are `vimtutor` (free in your terminal) or [Vim Adventures](https://vim-adventures.com/) (paid but free to try).
+Good tutorials for Vim are `vimtutor` (free in your terminal and doesn't take long) or [Vim Adventures](https://vim-adventures.com/) (paid but free to try).
 
 ## Selling my mouse and buying my first mechanical keyboard
 
@@ -102,16 +102,19 @@ You can take it one step further and get a hardware programmable keyboard like E
 ## Conclusion
 The choice of developer tools is generally individual (unless your company enforces a particular tool), no matter what you use I would strive for being efficient. I have learned a lot trying out Vim and I think if your career is longer than 10 years it's worth giving it a shot. You can always go back to what you used before if you don't like it.
 
-The fact is [Vim is not popular](https://pypl.github.io/IDE.html) (maybe we have that in common), but given its learning curve it's not that surprising. If you are just starting out IDE should not be your primary concern, but if you are wondering what to learn next here is an idea.
-
 <figure>
   <img src="/static/img/posts/swoledoge-cheems-vim-meme.jpg" alt="Swole Doge vs Cheems Vim meme">
 </figure>
 
+The fact is [Vim is not popular](https://pypl.github.io/IDE.html) (maybe we have that in common), but given its learning curve it's not that surprising. If you are just starting out IDE should not be your primary concern, but if you are wondering what to learn next here is an idea. Take into consideration the opportunity cost when deciding to learn Neovim, maybe you could learn something more aligned with your goals instead.
+
+Once you are a Neovim user there is also a configuration overhead whenever you need to setup support for a new language or framework. The setup generally will not be as smooth as in VSCode or any other IDE.
+
 ## Additional Resources
 
-Books and resources I recommend to learn Neovim and discover its ecosystem:
+Introduction video, books and resources I recommend to learn about Neovim and discover its ecosystem:
 
+- [Neovim in 100 Seconds](https://www.youtube.com/watch?v=c4OyfL5o7DU)
 - [Practical Vim, Second Edition](https://pragprog.com/titles/dnvim2/practical-vim-second-edition/)
 - [Modern Vim](https://pragprog.com/titles/modvim/modern-vim/)
 - [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim)
