@@ -1,4 +1,5 @@
 import ShortcutError from "./ShortcutError";
+import { Box } from './Box'
 
 export default function ErrorMessage({ code }) {
   let title = "Oops! An Error Occured";
@@ -10,10 +11,10 @@ export default function ErrorMessage({ code }) {
   }
 
   return (
-    <div className="error">
+    <Box css={{ textAlign: 'center' }}>
       <h1>{title}</h1>
       <ShortcutError />
       <p>{description}</p>
-    </div>
+    </Box>
   );
 }

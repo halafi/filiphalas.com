@@ -30,7 +30,7 @@ const items = [
           "Opinionated static site generator and web framework for Svelte",
         url: "https://github.com/Elderjs/elderjs",
         icon: "star",
-        stats: "2.0k+ stars",
+        stats: "2.1k+ stars",
       },
       {
         title: "Minesweeper",

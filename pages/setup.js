@@ -7,10 +7,12 @@ import categories from "../data/setup";
 export async function getStaticProps() {
   const meta = {
     title: "Setup | Filip Halas",
-    description: "Apps I use and that I would recommend to anyone to try out.",
-    tagline: "Mac OS X Setup",
-    gradientColor: "yellow-pink",
-    selectionColor: "orange",
+    description: "Software and Hardware I use and that I would recommend to anyone to try out.",
+    tagline: "MacOS Setup",
+    primaryColor: 'yellow',
+    secondaryColor: 'pink',
+    // gradientColor: "yellow-pink",
+    // selectionColor: "orange",
   };
 
   return { props: meta };

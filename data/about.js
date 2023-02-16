@@ -4,7 +4,7 @@ const items = [
     company: "Archipelo",
     companyUrl: "https://archipelo.com/",
     startDate: "2022-10-17",
-    endDate: "2022-02-15",
+    endDate: "2023-02-15",
     location: "Remote",
   },
   {

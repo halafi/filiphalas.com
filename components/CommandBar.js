@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Box } from "./Box";
+import { styled } from "../stitches.config";
 import { useRouter } from "next/router";
 import {
   KBarAnimator,
@@ -61,6 +63,15 @@ export default function CommandBar(props) {
       icon: <i className="ri-user-line" style={iconStyle} />,
     },
     {
+      id: "articles",
+      name: "Articles",
+      shortcut: ["g", "r"],
+      keywords: "go-articles",
+      section: "Go To",
+      perform: () => router.push("/articles"),
+      icon: <i className="ri-article-line" style={iconStyle} />,
+    },
+    {
       id: "projects",
       name: "Projects",
       shortcut: ["g", "p"],
@@ -105,15 +116,12 @@ export default function CommandBar(props) {
   return (
     <KBarProvider actions={actions}>
       <KBarPortal>
-        <KBarPositioner style={positionerStyle}>
-          <KBarAnimator className="kbar-blur" style={animatorStyle}>
-            <KBarSearch
-              style={searchStyle}
-              placeholder="Type a command or search…"
-            />
+        <Positioner>
+          <Animator>
+            <Search placeholder="Type a command or search…" />
             <RenderResults />
-          </KBarAnimator>
-        </KBarPositioner>
+          </Animator>
+        </Positioner>
       </KBarPortal>
 
       {props.children}
@@ -129,7 +137,7 @@ function RenderResults() {
       items={results}
       onRender={({ item, active }) =>
         typeof item === "string" ? (
-          <div style={groupNameStyle}>{item}</div>
+          <GroupName>{item}</GroupName>
         ) : (
           <ResultItem action={item} active={active} />
         )
@@ -140,27 +148,48 @@ function RenderResults() {
 
 const ResultItem = React.forwardRef(({ action, active }, ref) => {
   return (
-    <div ref={ref} style={getResultStyle(active)}>
-      <div style={actionStyle}>
+    <Box ref={ref} css={getResultStyle(active)}>
+      <Action>
         {action.icon && action.icon}
-        <div style={actionRowStyle}>
+        <ActionRow>
           <span>{action.name}</span>
-        </div>
-      </div>
+        </ActionRow>
+      </Action>
       {action.shortcut?.length ? (
-        <div aria-hidden style={shortcutStyle}>
+        <Shortcut aria-hidden>
           {action.shortcut.map((shortcut) => (
-            <kbd key={shortcut} style={kbdStyle}>
-              {shortcut}
-            </kbd>
+            <Kbd key={shortcut}>{shortcut}</Kbd>
           ))}
-        </div>
+        </Shortcut>
       ) : null}
-    </div>
+    </Box>
   );
 });
 
-const positionerStyle = {
+const Kbd = styled("kbd", {
+  background: "rgba(255, 255, 255, .1)",
+  color: "$secondary",
+  padding: "4px 8px",
+  textTransform: "uppercase",
+});
+
+const Shortcut = styled("div", {
+  display: "grid",
+  gridAutoFlow: "column",
+  gap: "4px",
+});
+
+const Action = styled("div", {
+  display: "flex",
+  gap: "8px",
+  alignItems: "center",
+});
+
+const ActionRow = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+});
+const Positioner = styled(KBarPositioner, {
   position: "fixed",
   display: "flex",
   alignItems: "flex-start",
@@ -170,17 +199,9 @@ const positionerStyle = {
   padding: "14vh 16px 16px",
   background: "rgba(0, 0, 0, .8)",
   boxSizing: "border-box",
-};
+});
 
-const animatorStyle = {
-  maxWidth: "600px",
-  width: "100%",
-  color: "var(--primaryColor)",
-  borderRadius: "8px",
-  overflow: "hidden",
-};
-
-const searchStyle = {
+const Search = styled(KBarSearch, {
   padding: "12px 16px",
   fontSize: "16px",
   width: "100%",
@@ -188,17 +209,42 @@ const searchStyle = {
   outline: "none",
   border: "none",
   margin: 0,
-  background: "var(--commandColor)",
-  color: "var(--primaryColor)",
-};
+  background: "$command",
+  color: "$primary",
+});
 
-const groupNameStyle = {
+const Animator = styled(KBarAnimator, {
+  backgroundColor: "#1a1c1e",
+  maxWidth: "600px",
+  width: "100%",
+  color: "$primary",
+  borderRadius: "8px",
+  overflow: "hidden",
+  "@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))": {
+    backgroundColor: "$command",
+    WebkitBackdropFilter: "saturate(300%) blur(25px)",
+    backdropFilter: "saturate(300%) blur(25px)",
+  },
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  "& > div > div::-webkit-scrollbar": {
+    display: "none",
+  },
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  "& > div > div": {
+    "-ms-overflow-style": "none",
+    "scrollbar-width": "none",
+  },
+});
+
+const GroupName = styled("div", {
   padding: "8px 16px",
   fontSize: "10px",
   textTransform: "uppercase",
   letterSpacing: "1px",
-  background: "var(--commandColor)",
-};
+  background: "$command",
+});
 
 const iconStyle = {
   fontSize: "20px",
@@ -206,39 +252,15 @@ const iconStyle = {
   top: "-2px",
 };
 
-const kbdStyle = {
-  padding: "4px 8px",
-  textTransform: "uppercase",
-  color: "var(--secondaryColor)",
-  background: "rgba(255, 255, 255, .1)",
-};
-
-const shortcutStyle = {
-  display: "grid",
-  gridAutoFlow: "column",
-  gap: "4px",
-};
-
-const actionStyle = {
-  display: "flex",
-  gap: "8px",
-  alignItems: "center",
-};
-
-const actionRowStyle = {
-  display: "flex",
-  flexDirection: "column",
-};
-
-const getResultStyle = (active) => {
+const getResultStyle = active => {
   return {
-    padding: "12px 16px",
-    background: active ? "rgba(255, 255, 255, 0.1)" : "var(--commandColor)",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
+    padding: '12px 16px',
+    background: active ? 'rgba(255, 255, 255, 0.1)' : '$command',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     margin: 0,
-    cursor: "pointer",
-    color: active ? "var(--primaryColor)" : "var(--secondaryColor)",
-  };
-};
+    cursor: 'pointer',
+    color: active ? '$primary' : '$secondary',
+  }
+}

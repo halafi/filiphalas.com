@@ -7,6 +7,7 @@
   --comment: #6272a4;
   --foreground: #f8f8f2;
   --selection: #44475a;
+  --hover: #212024;
 
   --cyan: #80ffea;
   --green: #8aff80;
@@ -15,6 +16,8 @@
   --purple: #9580ff;
   --red: #ff9580;
   --yellow: #ffff80;
+
+  --code: 'Fira Code', monospace;
 
   /* Transparency */
 
@@ -49,18 +52,18 @@
 
 /* Selection */
 
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection,
-code[class*="language-"] ::-moz-selection {
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection {
   text-shadow: none;
   background-color: var(--selection);
 }
 
-pre[class*="language-"]::selection,
-pre[class*="language-"] ::selection,
-code[class*="language-"]::selection,
-code[class*="language-"] ::selection {
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
   text-shadow: none;
   background-color: var(--selection);
 }
@@ -172,14 +175,14 @@ div.code-toolbar > .toolbar span:focus {
 /* Remove text shadow for printing */
 
 @media print {
-  code[class*="language-"],
-  pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
     text-shadow: none;
   }
 }
 
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   color: var(--foreground);
   background: var(--background);
   text-shadow: none;
@@ -203,12 +206,12 @@ pre[class*="language-"] {
 pre,
 code,
 pre code span {
-  font-family: var(--codeFont);
+  font-family: var(--code);
 }
 
 /* Code blocks */
 
-pre[class*="language-"] {
+pre[class*='language-'] {
   background: var(--background);
   border-radius: 0.5em;
   padding: 1em;
@@ -217,13 +220,13 @@ pre[class*="language-"] {
   height: auto;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
   background: var(--background);
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+:not(pre) > code[class*='language-'] {
   padding: 4px 7px;
   border-radius: 0.3em;
   white-space: normal;
@@ -459,7 +462,7 @@ pre[class*="language-"] {
 }
 
 .highlight-line:empty:before {
-  content: " ";
+  content: ' ';
 }
 
 .highlight-line:not(:last-child) {

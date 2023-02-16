@@ -10,7 +10,8 @@ const categories = [
       },
       {
         title: "VSCode",
-        description: "My 2nd editor of choice that I use for notebooks, debugging etc.",
+        description:
+          "My 2nd editor of choice that I sometimes use for notebooks, debugging etc.",
         url: "https://code.visualstudio.com",
       },
       // {
@@ -25,7 +26,8 @@ const categories = [
     items: [
       {
         title: "Delta",
-        description: "A syntax-highlighting pager for git, diff, and grep output.",
+        description:
+          "A syntax-highlighting pager for git, diff, and grep output.",
         url: "https://github.com/dandavison/delta",
       },
       {
@@ -54,9 +56,10 @@ const categories = [
         url: "https://jonas.github.io/tig/",
       },
       {
-        title: "Ranger",
-        description: "VIM inspired file manager for the console.",
-        url: "https://github.com/ranger/ranger",
+        title: "LF",
+        description:
+          "Terminal file manager written in Go with inspired by Ranger.",
+        url: "https://github.com/gokcehan/lf",
       },
       {
         title: "Tmux",
@@ -86,7 +89,8 @@ const categories = [
       },
       {
         title: "Commander One",
-        description: "I grew up on Total Commander.",
+        description:
+          "I grew up on Total Commander and sometimes Finder just doesn't do it for me.",
         url: "https://ftp-mac.com/",
       },
       // {
@@ -96,10 +100,14 @@ const categories = [
       // },
       {
         title: "Karabiner-Elements",
-        description:
-          "A powerful and stable keyboard customizer for macOS.",
+        description: "A powerful and stable keyboard customizer for macOS.",
         url: "https://karabiner-elements.pqrs.org/",
       },
+      // {
+      //   title: "Keybase",
+      //   description: "Secure messaging and file-sharing, Git commit signing and more.",
+      //   url: "https://keybase.io/",
+      // },
       {
         title: "Monosnap",
         description: "App I use for annotated screenshots.",
@@ -112,8 +120,15 @@ const categories = [
       },
       {
         title: "NotePlan",
-        description: "Resembles bullet journel but I don't need to carry it around.",
+        description:
+          "Resembles bullet journel but I don't need to carry it around.",
         url: "https://noteplan.co/",
+      },
+      {
+        title: "Obsidian",
+        description:
+          "Knowledge base that works on top of your local folder of plain text files.",
+        url: "https://obsidian.md/",
       },
       {
         title: "Postico 2",
@@ -126,22 +141,21 @@ const categories = [
           "Move and resize windows in macOS using keyboard shortcuts or snap areas.",
         url: "https://rectangleapp.com/",
       },
-      {
-        title: "Skype",
-        description: "Cheap calls around the world.",
-        url: "https://www.skype.com/en/",
-      },
-      {
-        title: "Spotify",
-        description: "Music for the ears.",
-        url: "https://www.spotify.com/",
-      },
-      {
-        title: "VLC",
-        description:
-          "Open source cross-platform multimedia player.",
-        url: "https://www.videolan.org/vlc/",
-      },
+      // {
+      //   title: "Skype",
+      //   description: "For calls around the world.",
+      //   url: "https://www.skype.com/en/",
+      // },
+      // {
+      //   title: "Spotify",
+      //   description: "Music for the ears.",
+      //   url: "https://www.spotify.com/",
+      // },
+      // {
+      //   title: "VLC",
+      //   description: "Open source cross-platform multimedia player.",
+      //   url: "https://www.videolan.org/vlc/",
+      // },
     ],
   },
   {
@@ -155,21 +169,24 @@ const categories = [
       // },
       {
         title: "Keychron K12 Mechanical Keyboard",
-        description:
-          "My first mechanical keyboard with 60% layout, slightly superseded by V4 QMK.",
+        description: "Mechanical keyboard with 60% layout.",
         url: "https://www.keychron.com/products/keychron-k12-wireless-mechanical-keyboard",
       },
+      // {
+      //   title: "Mouse",
+      //   description:
+      //     "Who would use such a thing.",
+      //   url: "https://www.apple.com/shop/product/MK2E3AM/A/magic-mouse-white-multi-touch-surface",
+      // },
       {
-        title: "Magic Mouse",
-        description:
-          "I use mouse but not for much.",
-        url: "https://www.apple.com/shop/product/MK2E3AM/A/magic-mouse-white-multi-touch-surface",
+        title: "Nexstand K2",
+        description: "Portable and foldable laptop stand. More height adjustments than Roost.",
+        url: "http://www.nexstand.com/",
       },
       {
-        title: "Portable Laptop Stand",
-        description:
-          "Does what it says it does.",
-        url: "https://www.amazon.de/-/en/gp/product/B0777Q9B55/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1",
+        title: "Roost Laptop Stand",
+        description: "Better angle than K2 without adjustments.",
+        url: "https://www.therooststand.com/",
       },
     ],
   },

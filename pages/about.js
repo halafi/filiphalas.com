@@ -1,5 +1,7 @@
+import { styled } from "../stitches.config";
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 import { parseISO, format, intervalToDuration } from "date-fns";
 import Main from "../layouts/Main";
 import stripHtml from "../lib/strip-html";
@@ -9,12 +11,12 @@ import items from "../data/about";
 
 export async function getStaticProps() {
   const meta = {
-    title: "About Filip Halas",
+    title: "About | Filip Halas",
     description:
-      "<p><strong>Hi, I'm Filip.</strong> I first touched HTML and game development back in elementary school and am passionate about IT and computer science ever since.</p><p>I'm from Czechia and currently <strong>workactioning around Asia</strong>.</p><p><strong>I enjoy learning, building and solving difficult problems</strong>, working on open source and side projects.</p>",
-    tagline: "Who Am I",
-    gradientColor: "purple-cyan",
-    selectionColor: "pink",
+      "Hi, I'm Filip. I started with HTML and game development in elementary school and never stopped being passionate about software and technology. I'm from Czechia and currently workationing around East and Southeast Asia. I enjoy learning, building, problem solving, working on open source and side projects.",
+    tagline: "About Me",
+    primaryColor: "cyan",
+    secondaryColor: "purple",
   };
 
   return { props: meta };
@@ -25,15 +27,39 @@ function About(props) {
 
   const renderIntro = () => {
     return (
-      <div className="about">
-        <div className="about-section">
-          <img alt="Filip" src="/static/images/filip-bw.jpg" />
-        </div>
-        <div
-          dangerouslySetInnerHTML={{ __html: description }}
-          className="about-section"
-        />
-      </div>
+      <Container>
+        <Section>
+          <Image
+            alt="Filip"
+            src="/static/images/filip-bw.jpg"
+            width="336"
+            height="336"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
+            priority
+          />
+        </Section>
+        <Section>
+          <Paragraph
+            css={{
+              marginTop: "16px",
+              "@bp2": { marginTop: "-6px" },
+            }}
+          >
+            <strong>Hi, I'm Filip.</strong> I started with HTML and game
+            development in elementary school and never stopped being{" "}
+            <strong>passionate about software and technology</strong>.
+          </Paragraph>
+          <Paragraph>
+            I'm from Czechia and currently{" "}
+            <strong>workationing around East and Southeast Asia</strong>.
+          </Paragraph>
+          <Paragraph>
+            <strong>I enjoy learning, building, problem solving</strong>,
+            working on open source and side projects.
+          </Paragraph>
+        </Section>
+      </Container>
     );
   };
 
@@ -84,7 +110,7 @@ function About(props) {
   };
 
   return (
-    <div className="single">
+    <>
       <Head>
         <title>{title}</title>
         <meta content={title} property="og:title" />
@@ -97,9 +123,26 @@ function About(props) {
 
       <h2>Career</h2>
       {renderAll()}
-    </div>
+    </>
   );
 }
+
+const Container = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  "@bp2": { flexDirection: "row" },
+});
+
+const Paragraph = styled("p", {
+  "@bp2": { margin: "15px 0" },
+});
+
+const Section = styled("div", {
+  marginTop: "0px",
+  width: "auto",
+  "@bp2": { width: "48%" },
+});
 
 About.Layout = Main;
 

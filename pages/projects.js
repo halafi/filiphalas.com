@@ -3,6 +3,7 @@ import Head from "next/head";
 import { AnimateSharedLayout } from "framer-motion";
 import Main from "../layouts/Main";
 import FeaturedProject from "../components/FeaturedProject";
+import { FeaturedProjects } from '../components/FeaturedProjects'
 import stripHtml from "../lib/strip-html";
 import items from "../data/projects";
 
@@ -10,8 +11,8 @@ export async function getStaticProps() {
   const meta = {
     title: "Projects | Filip Halas",
     tagline: "Open Source Projects",
-    gradientColor: "cyan-green",
-    selectionColor: "green",
+    primaryColor: 'purple',
+    secondaryColor: 'green',
   };
 
   return { props: meta };
@@ -64,7 +65,7 @@ function Projects(props) {
   };
 
   const { title } = props;
-  const description = `On this page you can find <strong>${getTotalProjects()} different</strong> open source apps and libraries I have built or contributed to over the course of my github career.`;
+  const description = `On this page you can find <strong>${getTotalProjects()} different</strong> open source apps and libraries I have built or contributed to over the course of my github career starting with University projects.`;
 
   return (
     <div className="single">
@@ -80,7 +81,7 @@ function Projects(props) {
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
         <h2>Featured Projects</h2>
-        <div className="featured-projects">{renderFeatured()}</div>
+        <FeaturedProjects>{renderFeatured()}</FeaturedProjects>
 
         <h2>All Projects</h2>
         {renderAll()}
