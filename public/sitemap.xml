@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+   <loc>https://filiphalas.com</loc>
+ </url>
+ <url>
+   <loc>https://filiphalas.com/about</loc>
+ </url>
+ <url>
+   <loc>https://filiphalas.com/articles</loc>
+ </url>
+ <url>
+   <loc>https://filiphalas.com/projects</loc>
+ </url>
+ <url>
+   <loc>https://filiphalas.com/setup</loc>
+ </url>
+ <url>
+   <loc>https://filiphalas.com/from-vscode-to-neovim</loc>
+ </url>
+</urlset>
