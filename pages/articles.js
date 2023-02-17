@@ -23,7 +23,7 @@ export async function getStaticProps() {
   // article ideas: how to find meaning in your work?
   const featuredPosts = [
     getPostBySlug("from-vscode-to-neovim", featuredParams),
-    // getPostBySlug("thoughts-on-digital-nomad-lifestyle", featuredParams),
+    getPostBySlug("reduce-decision-fatigue-digital-nomad", featuredParams),
   ];
 
   return {
