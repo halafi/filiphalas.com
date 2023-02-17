@@ -75,6 +75,7 @@ function Projects(props) {
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
         <meta content="https://filiphalas.com/projects" property="og:url" />
+        <link rel="cannonical" href="https://filiphalas.com/projects" />
       </Head>
 
       <AnimateSharedLayout>

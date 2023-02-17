@@ -1,6 +1,6 @@
 import React from "react";
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import { getCssText } from '../stitches.config'
+import Document, { Html, Head, Body, Main, NextScript } from "next/document";
+import { getCssText } from "../stitches.config";
 import { GA_TRACKING_ID } from "../lib/gtag";
 
 export default class extends Document {
@@ -42,8 +42,10 @@ export default class extends Document {
             }}
           />
         </Head>
-        <Main />
-        <NextScript />
+        <body>
+          <Main />
+          <NextScript />
+        </body>
       </Html>
     );
   }

@@ -47,6 +47,7 @@ function Ininerary(props) {
         <title>{title}</title>
         <meta content={title} property="og:title" />
         <meta content="https://filiphalas.com/itinerary" property="og:url" />
+        <link rel="cannonical" href="https://filiphalas.com/itinerary" />
       </Head>
 
       <h2>Upcoming Flights</h2>

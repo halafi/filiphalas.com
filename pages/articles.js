@@ -63,7 +63,7 @@ function Articles(props) {
           <ListItem
             key={index}
             index={index}
-            href={`/${post.slug}/`}
+            href={`/${post.slug}`}
             title={post.title}
             date={post.date}
           />
@@ -83,6 +83,7 @@ function Articles(props) {
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
         <meta content="https://filiphalas.com/articles" property="og:url" />
+        <link rel="cannonical" href="https://filiphalas.com/articles" />
       </Head>
 
       <AnimateSharedLayout>

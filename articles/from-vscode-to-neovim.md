@@ -3,6 +3,7 @@ title: "From VSCode to Neovim, is it worth it?"
 description: "Trying out Vim is something every Software Engineer should do at some point, however when it comes to replacing your VSCode or your favorite IDE it is not that simple."
 image: /static/img/posts/neovim.jpg
 date: "2023-02-16"
+canonical_url: https://filiphalas.com/from-vscode-to-neovim
 ---
 
 My journey with text editors and IDEs that I have been using primarily for web development dates back to WebStorm, followed by VSCode, resulting with using Neovim as my primary code editor at the moment. Yet if anyone asks me whether they should switch to Neovim I tend to discourage them, despite never imagining myself to go back to an IDE without near perfect Vim integration.

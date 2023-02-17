@@ -26,6 +26,7 @@ function Index(props) {
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
         <meta content="https://filiphalas.com" property="og:url" />
+        <link rel="cannonical" href="https://filiphalas.com" />
       </Head>
 
       <Navbar />
