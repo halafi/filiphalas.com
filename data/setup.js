@@ -181,7 +181,7 @@ const categories = [
       {
         title: "Nexstand K2",
         description: "Portable and foldable laptop stand. More height adjustments than Roost.",
-        url: "http://www.nexstand.com/",
+        url: "https://nexstand.io/",
       },
       {
         title: "Roost Laptop Stand",

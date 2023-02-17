@@ -11,20 +11,21 @@ export async function getStaticProps() {
     props: {
       title: "Filip Halas",
       description: "Building state of the art web apps, static sites and tools",
+      seoDescription: "Senior Software Engineer. Building state of the art web apps, static sites and tools. Programming since 2002, getting paid for it since 2014.",
     },
   };
 }
 
 function Index(props) {
-  const { title, description } = props;
+  const { title, description, seoDescription } = props;
 
   return (
     <Wrapper>
       <Head>
         <title>{title}</title>
         <meta content={title} property="og:title" />
-        <meta content={description} name="description" />
-        <meta content={description} property="og:description" />
+        <meta content={seoDescription} name="description" />
+        <meta content={seoDescription} property="og:description" />
         <meta content="https://filiphalas.com" property="og:url" />
         <link rel="cannonical" href="https://filiphalas.com" />
       </Head>

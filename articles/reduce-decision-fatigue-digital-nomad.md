@@ -6,7 +6,7 @@ date: "2023-02-17"
 canonical_url: https://filiphalas.com/reduce-decision-fatigue-digital-nomad
 ---
 
-Are you not dreaming about becoming a digital nomad? If that's the case, then you are lucky as you can simplify your life and reduce decision fatigue by staying in one place, if you can [wear the same t-shirt every day](https://www.inc.com/craig-bloem/this-1-unusual-habit-helped-make-mark-zuckerberg-steve-jobs-dr-dre-successful.html) it's even better. Not having to worry where you'll go next will save you mental capacity to focus on something else that matters to you.
+Are you not dreaming about becoming a digital nomad? If that's the case, then you are lucky as you can simplify your life and reduce decision fatigue by staying in one place, if you can <a href="https://www.inc.com/craig-bloem/this-1-unusual-habit-helped-make-mark-zuckerberg-steve-jobs-dr-dre-successful.html" target="_blank">wear the same t-shirt every day</a> it's even better. Not having to worry where you'll go next will save you mental capacity to focus on something else that matters to you.
 
 On the other hand if you have a bucket list full of places you want to go to and wouldn't want to live out your life and miss out on visiting these places you are a bit screwed, however there are other ways how to reduce decision fatigue and make it work.
 
