@@ -73,7 +73,7 @@ function Articles(props) {
   };
 
   const { title } = props;
-  const description = `On this page you can find <strong>${props.allPosts.length} article</strong> I wrote. I write about travelling, software engineering and productivity.`;
+  const description = `On this page you can find <strong>${props.allPosts.length} articles</strong> I wrote. I write about travelling, software engineering and productivity.`;
 
   return (
     <>
