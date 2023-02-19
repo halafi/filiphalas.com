@@ -26,12 +26,12 @@ Oh how simple it was, stay home, be careful when going outside. Avoid social gat
 So over time I ended up thinking more and more about how difficult life is if you have too many options, but I think I developed a relatively good system on how to make it bearable, and don't get me wrong I probably prefer freedom over quarantine.
 
 ## Tips on how to reduce decision fatigue
-Over time develop a system that reduces how many decisions you are making so you can run on autopilot.
+Over time develop a system that reduces how many decisions you are making so you can run on autopilot. You could have a summer and winter routine that's mostly consistent, but there is no point in keeping this too .
 
 ### 1. Find balance between explore and exploit
-At some point you will have some favorite places that you know well, yet there will always be more and more places to explore.
+At some point you will have some favorite places that you know well and can come back to "exploit" them, yet there will always be more and more places to explore (diving into the unknown).
 
-I have reached a point where I am maintaining a list of top places for living that I can navigate between or decide to settle in one of them at any time.
+I have reached a point where I am maintaining a list of top places for living that I can navigate between or decide to settle in one of them at some point.
 
 ### 2. Eliminate as many places as you can from your travel list
 If you don't like chopsticks just don't ever go to Asia, make life easy for yourself. Hate Spanish language? great, you just saved yourself having to ever go to Mexico, South America and Spain.
