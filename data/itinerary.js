@@ -13,6 +13,20 @@ const itinerary = [
     flightNumber: "MM 926",
     aeroline: 'kiwi',
   },
+  {
+    origin: "Okinawa Island OKA",
+    destination: "Osaka (KIX)",
+    date: "2023-04-25 11:50:00.000",
+    flightNumber: "GK 352",
+    aeroline: 'kiwi',
+  },
+  {
+    origin: "Fukuoka FUK",
+    destination: "Bangkok DMK",
+    date: "2023-05-12 08:15:00.000",
+    flightNumber: "FD 237",
+    aeroline: 'kiwi',
+  },
 ];
 
 export default itinerary;
