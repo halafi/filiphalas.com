@@ -1,5 +1,5 @@
 import React from "react";
-import Document, { Html, Head, Body, Main, NextScript } from "next/document";
+import Document, { Html, Head/*  Body */, Main, NextScript } from "next/document";
 import { getCssText } from "../stitches.config";
 import { GA_TRACKING_ID } from "../lib/gtag";
 
@@ -26,6 +26,9 @@ export default class extends Document {
           />
 
           <link rel="icon" href="/favicon.png" sizes="any" type="image/png" />
+          <link rel="alternate" type="application/rss+xml" href="https://filiphalas.com/rss/feed.xml"/>
+          <link rel="alternate" type="application/atom+xml" href="https://filiphalas.com/rss/atom.xml" />
+          <link rel="alternate" type="application/feed+json" href="https://filiphalas.com/rss/feed.json" />
 
           <script
             async

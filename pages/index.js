@@ -5,8 +5,11 @@ import Footer from "../components/Footer";
 import ShortcutHome from "../components/ShortcutHome";
 import { PostMain, PostContent, PostContainer } from '../components/Post'
 import { Wrapper } from '../components/Wrapper'
+import { generateRssFeed } from '../lib/blog'
 
 export async function getStaticProps() {
+  generateRssFeed();
+
   return {
     props: {
       title: "Filip Halas",
