@@ -1,6 +1,20 @@
 const itinerary = [
   {
     origin: "Bangkok DMK",
+    destination: "Phnom Penh PNH",
+    date: "2023-01-28 15:15:00.000",
+    flightNumber: "FD 606",
+    aeroline: 'kiwi',
+  },
+  {
+    origin: "Phnom Penh PNH",
+    destination: "Bangkok DMK",
+    date: "2023-02-04 17:15:00.000",
+    flightNumber: "FD 607",
+    aeroline: 'kiwi',
+  },
+  {
+    origin: "Bangkok DMK",
     destination: "Taipei TPE",
     date: "2023-03-20 06:40:00.000",
     flightNumber: "FD 230",
