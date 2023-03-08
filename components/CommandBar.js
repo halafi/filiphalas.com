@@ -56,7 +56,7 @@ export default function CommandBar(props) {
     {
       id: "about",
       name: "About",
-      shortcut: ["g", "a"],
+      shortcut: ["g", "a", "b"],
       keywords: "go-about",
       section: "Go To",
       perform: () => router.push("/about"),
@@ -65,7 +65,7 @@ export default function CommandBar(props) {
     {
       id: "articles",
       name: "Articles",
-      shortcut: ["g", "r"],
+      shortcut: ["g", "a", "r"],
       keywords: "go-articles",
       section: "Go To",
       perform: () => router.push("/articles"),
