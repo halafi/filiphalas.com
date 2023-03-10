@@ -22,8 +22,8 @@ export async function getStaticProps() {
 
   // article ideas: how to find meaning in your work?
   const featuredPosts = [
-    getPostBySlug("chatgpt-content-generation", featuredParams),
     getPostBySlug("from-vscode-to-neovim", featuredParams),
+    getPostBySlug("reduce-decision-fatigue-digital-nomad", featuredParams),
   ];
 
   return {
