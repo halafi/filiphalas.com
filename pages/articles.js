@@ -45,7 +45,7 @@ function Articles(props) {
         <FeaturedArticle
           key={index}
           index={index}
-          href={`/${post.slug}/`}
+          href={`/${post.slug}`}
           title={post.title}
           description={post.description}
           image={post.image}
