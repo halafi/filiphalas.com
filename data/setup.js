@@ -3,16 +3,16 @@ const categories = [
     name: "Coding",
     items: [
       {
-        title: "Neovim",
+        title: "VSCode + Vim extension",
         description:
-          "Most lightweight and productive editor I worked with so far.",
-        url: "https://neovim.io/",
+          "Irreplaceable for stuff like Juniper notebooks and debugging.",
+        url: "https://code.visualstudio.com",
       },
       {
-        title: "VSCode",
+        title: "Neovim",
         description:
-          "My 2nd editor of choice that I sometimes use for notebooks, debugging etc.",
-        url: "https://code.visualstudio.com",
+          "Lightweight and productive editor.",
+        url: "https://neovim.io/",
       },
       // {
       //   title: "WebStorm",
@@ -124,12 +124,12 @@ const categories = [
           "Resembles bullet journel but I don't need to carry it around.",
         url: "https://noteplan.co/",
       },
-      {
-        title: "Obsidian",
-        description:
-          "Knowledge base that works on top of your local folder of plain text files.",
-        url: "https://obsidian.md/",
-      },
+      // {
+      //   title: "Obsidian",
+      //   description:
+      //     "Knowledge base that works on top of your local folder of plain text files.",
+      //   url: "https://obsidian.md/",
+      // },
       {
         title: "Postico 2",
         description: "A Modern PostgreSQL Client for the Mac.",
@@ -172,12 +172,12 @@ const categories = [
         description: "Mechanical keyboard with 60% layout.",
         url: "https://www.keychron.com/products/keychron-k12-wireless-mechanical-keyboard",
       },
-      // {
-      //   title: "Mouse",
-      //   description:
-      //     "Who would use such a thing.",
-      //   url: "https://www.apple.com/shop/product/MK2E3AM/A/magic-mouse-white-multi-touch-surface",
-      // },
+      {
+        title: "Logitech Lift",
+        description:
+          "Vertical ergonomical mouse.",
+        url: "https://www.logitech.com/en-us/products/mice/lift-vertical-ergonomic-mouse.910-006466.html",
+      },
       {
         title: "Nexstand K2",
         description: "Portable and foldable laptop stand. More height adjustments than Roost.",

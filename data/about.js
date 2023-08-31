@@ -1,6 +1,14 @@
 const items = [
   {
     jobTitle: "Senior Software Engineer",
+    company: "Eucalyptus",
+    companyUrl: "https://eucalyptus.vc/",
+    startDate: "2023-04-01",
+    // endDate: "2023-02-15",
+    location: "Remote",
+  },
+  {
+    jobTitle: "Senior Software Engineer",
     company: "Archipelo",
     companyUrl: "https://archipelo.com/",
     startDate: "2022-10-17",
