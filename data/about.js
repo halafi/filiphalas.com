@@ -4,7 +4,7 @@ const items = [
     company: "Eucalyptus",
     companyUrl: "https://eucalyptus.vc/",
     startDate: "2023-04-01",
-    // endDate: "2023-02-15",
+    endDate: "2023-09-20",
     location: "Remote",
   },
   {

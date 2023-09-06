@@ -13,7 +13,7 @@ export async function getStaticProps() {
   const meta = {
     title: "About | Filip Halas",
     description:
-      "Hi, I'm Filip. I started with HTML and game development in elementary school and never stopped being passionate about software and technology. I'm from Czechia and currently workationing around East and Southeast Asia. I enjoy learning, building, problem solving, working on open source and side projects.",
+      "Hi, I'm Filip. I started with HTML and game development in elementary school and never stopped being passionate about software and technology. I enjoy learning, building, problem solving, working on open source and side projects.",
     tagline: "About Me",
     primaryColor: "cyan",
     secondaryColor: "purple",
