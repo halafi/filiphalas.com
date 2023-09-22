@@ -22,8 +22,8 @@ export async function getStaticProps() {
 
   // article ideas: how to find meaning in your work?
   const featuredPosts = [
+    getPostBySlug("from-neovim-back-to-vscode", featuredParams),
     getPostBySlug("from-vscode-to-neovim", featuredParams),
-    getPostBySlug("reduce-decision-fatigue-digital-nomad", featuredParams),
   ];
 
   return {
