@@ -117,7 +117,7 @@ function About(props) {
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
         <meta content="https://filiphalas.com/about" property="og:url" />
-        <link rel="cannonical" href="https://filiphalas.com/about" />
+        <link rel="canonical" href="https://filiphalas.com/about" />
       </Head>
 
       {renderIntro()}

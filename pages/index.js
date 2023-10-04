@@ -30,7 +30,7 @@ function Index(props) {
         <meta content={seoDescription} name="description" />
         <meta content={seoDescription} property="og:description" />
         <meta content="https://filiphalas.com" property="og:url" />
-        <link rel="cannonical" href="https://filiphalas.com" />
+        <link rel="canonical" href="https://filiphalas.com" />
       </Head>
 
       <Navbar />
