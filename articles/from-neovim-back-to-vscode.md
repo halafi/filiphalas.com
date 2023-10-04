@@ -37,6 +37,7 @@ If I would work 100% of time with Typescript I would give it a go, and I still m
 - I don't need to care about LSP, that's the main thing for me.
 - I also like being out of the terminal in a more modern UX where drag and drop in file manager, image preview etc. works out of the box.
 - File and folder related refactoring is better, e.g. moving files around and auto updating imports.
+- If I use VSCode integrated terminal I don't need to maintain iTerm configuration and it works quite nicely with Tmux individual sessions per project.
 - I still have to maintain a large configuration, particularly my VIM config in VS Code.
 - I don't need to switch from Neovim to VSCode for debugging. I gave up on maintaining debugger configuration in Neovim for several languages.
 - Transition to another modern IDE may be easier, e.g. XCode. I don't want to be in the terminal without a mouse forever building UX.
