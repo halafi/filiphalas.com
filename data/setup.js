@@ -8,12 +8,12 @@ const categories = [
           "Irreplaceable for stuff like Juniper notebooks and debugging.",
         url: "https://code.visualstudio.com",
       },
-      {
-        title: "Neovim",
-        description:
-          "Lightweight and productive editor.",
-        url: "https://neovim.io/",
-      },
+      // {
+      //   title: "Neovim",
+      //   description:
+      //     "Lightweight and productive editor.",
+      //   url: "https://neovim.io/",
+      // },
       // {
       //   title: "WebStorm",
       //   description: "My 3rd editor of choice that I don't use anymore, but miss it sometimes.",
@@ -119,11 +119,15 @@ const categories = [
         url: "https://numi.app/",
       },
       {
-        title: "NotePlan",
-        description:
-          "Resembles bullet journel but I don't need to carry it around.",
-        url: "https://noteplan.co/",
-      },
+        title: "Notes",
+        description: "Trying to use something simple and minimalistic."
+      }
+      // {
+      //   title: "NotePlan",
+      //   description:
+      //     "Resembles bullet journel but I don't need to carry it around.",
+      //   url: "https://noteplan.co/",
+      // },
       // {
       //   title: "Obsidian",
       //   description:
