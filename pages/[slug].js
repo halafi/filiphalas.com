@@ -9,7 +9,8 @@ function Post(props) {
     return <ErrorMessage code={props.errorCode} />
   }
 
-  const title = `${props.title} | Filip Halas`
+  // const title = `${props.title} | Filip Halas`
+  const title = props.title;
   const description = props.description || ''
   const url = `https://filiphalas.com/${props.slug}`
   const date = new Date(props.date).toISOString()

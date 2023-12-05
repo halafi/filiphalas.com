@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /static/img/posts/split-keyboard.webp
+Disallow: /rss/feed.xml
