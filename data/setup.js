@@ -184,14 +184,24 @@ const categories = [
       },
       {
         title: "Nexstand K2",
-        description: "Portable and foldable laptop stand. More height adjustments than Roost.",
+        description: "Portable and foldable laptop stand. More height adjustments than Roost V2, slightly worse angle.",
         url: "https://nexstand.io/",
       },
       {
-        title: "Roost Laptop Stand",
-        description: "Better angle than K2 without adjustments.",
-        url: "https://www.therooststand.com/",
+        title: "Delso Projuster 180x80cm",
+        description: "Standing desk.",
+        url: "https://delso.cz/produkt/elektricky-vyskove-nastavitelny-stul-projuster/",
       },
+      {
+        title: "MARKUS Office chair",
+        description: "Buy it for life, lacks adjustable wrist, neck and lumbar support but great value for the money.",
+        url: "https://www.ikea.com/us/en/p/markus-office-chair-vissle-dark-gray-90289172/",
+      }
+      // {
+      //   title: "Roost Laptop Stand",
+      //   description: "Better angle than K2 without adjustments.",
+      //   url: "https://www.therooststand.com/",
+      // },
     ],
   },
 ];

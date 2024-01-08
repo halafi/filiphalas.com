@@ -52,7 +52,7 @@ function About(props) {
           </Paragraph>
           <Paragraph>
             I'm from Czechia and currently{" "}
-            <strong>workationing around East and Southeast Asia</strong>.
+            <strikethrough>workationing around East and Southeast Asia</strikethrough>.
           </Paragraph>
           <Paragraph>
             <strong>I enjoy learning, building, problem solving</strong>,
