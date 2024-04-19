@@ -172,9 +172,9 @@ const categories = [
       //   // url: "https://www.apple.com/shop/product/MK2E3AM/A/magic-mouse-white-multi-touch-surface",
       // },
       {
-        title: "Keychron K12 Mechanical Keyboard",
-        description: "Mechanical keyboard with 60% layout.",
-        url: "https://www.keychron.com/products/keychron-k12-wireless-mechanical-keyboard",
+        title: "ZSA Voyager",
+        description: "Low-profile, split ergonomic keyboard.",
+        url: "https://www.zsa.io/voyager/",
       },
       {
         title: "Logitech Lift",
@@ -186,6 +186,11 @@ const categories = [
         title: "Nexstand K2",
         description: "Portable and foldable laptop stand. More height adjustments than Roost V2, slightly worse angle.",
         url: "https://nexstand.io/",
+      },
+      {
+        title: "Carpio 2.0",
+        description: "Ergonomic wrist rest, though I am not yet sure if I like it much, not usable with Lift or tented keyboard much.",
+        url: "https://deltahub.io/products/carpio-ergonomic-wrist-rest",
       },
       {
         title: "Delso Projuster 180x80cm",

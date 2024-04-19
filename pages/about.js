@@ -51,8 +51,7 @@ function About(props) {
             <strong>passionate about software and technology</strong>.
           </Paragraph>
           <Paragraph>
-            I'm from Czechia and currently{" "}
-            <strikethrough>workationing around East and Southeast Asia</strikethrough>.
+            I'm based in Brno, Czechia though I occasionally do extended travel.
           </Paragraph>
           <Paragraph>
             <strong>I enjoy learning, building, problem solving</strong>,
