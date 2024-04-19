@@ -109,9 +109,9 @@ const categories = [
       //   url: "https://keybase.io/",
       // },
       {
-        title: "Monosnap",
+        title: "Cleanshot",
         description: "App I use for annotated screenshots.",
-        url: "https://monosnap.com/",
+        url: "https://cleanshot.com/",
       },
       {
         title: "Numi",
@@ -121,7 +121,7 @@ const categories = [
       {
         title: "Notes",
         description: "Trying to use something simple and minimalistic."
-      }
+      },
       // {
       //   title: "NotePlan",
       //   description:
