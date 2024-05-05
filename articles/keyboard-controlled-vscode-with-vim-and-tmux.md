@@ -1,7 +1,7 @@
 ---
 title: "Keyboard controlled VSCode with Vim and Tmux"
 description: "I am sharing my current setup of how to use VSCode the best way that I know. Reducing the times I am switching between keyboard and mouse makes me more productive."
-image: /static/img/posts/split-keyboard.webp
+image: /static/img/posts/zsa-voyager-setup.jpg
 date: "2023-10-07"
 canonical_url: https://filiphalas.com/keyboard-controlled-vscode-with-vim-and-tmux
 ---
