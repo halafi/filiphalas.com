@@ -87,12 +87,12 @@ const categories = [
         description: "Take control of your menu bar.",
         url: "https://www.macbartender.com/Bartender4",
       },
-      {
-        title: "Commander One",
-        description:
-          "I grew up on Total Commander and sometimes Finder just doesn't do it for me.",
-        url: "https://ftp-mac.com/",
-      },
+      // {
+      //   title: "Commander One",
+      //   description:
+      //     "I grew up on Total Commander and sometimes Finder just doesn't do it for me.",
+      //   url: "https://ftp-mac.com/",
+      // },
       // {
       //   title: "Insomnia",
       //   description: "API development and documentation.",
@@ -145,6 +145,16 @@ const categories = [
           "Move and resize windows in macOS using keyboard shortcuts or snap areas.",
         url: "https://rectangleapp.com/",
       },
+      {
+        title: "Mos",
+        description: "Makes scroll wheel go brrr (slighty better).",
+        url: "https://mos.caldis.me/"
+      }, 
+      {
+        title: "BetterDisplay",
+        description: "Almost needed for certain monitors used with Macbook.",
+        url: "https://github.com/waydabber/BetterDisplay#readme"
+      }
       // {
       //   title: "Skype",
       //   description: "For calls around the world.",
@@ -189,7 +199,7 @@ const categories = [
       },
       {
         title: "Carpio 2.0",
-        description: "Ergonomic wrist rest, though I am not yet sure if I like it much, not usable with Lift or tented keyboard much.",
+        description: "Ergonomic wrist rest that I am not that happy with, not usable with Lift or tented keyboard.",
         url: "https://deltahub.io/products/carpio-ergonomic-wrist-rest",
       },
       {
