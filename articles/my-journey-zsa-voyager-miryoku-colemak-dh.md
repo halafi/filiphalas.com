@@ -24,10 +24,10 @@ The keyboards I considered (not affiliated with any):
 - [Keychron Q11 QMK Custom Mechanical Keyboard](https://www.keychron.com/products/keychron-q11-qmk-custom-mechanical-keyboard)
 - [Dygma Defy](https://dygma.com/products/dygma-defy)
 - DIY / prebuilt ones, e.g. [SofleKeyboard](https://josefadamcik.github.io/SofleKeyboard/)
+- [Perixx PERIBOARD-624B](https://perixx.com/products/perixx-periboard-624b-us-wireless-ergonomic-split-keyboard-up-to-2-ft-separation-adjustable-tilt-angle-low-profile-membrane-keys-black-us-english) - the cheapest split keyboard I found that didn't seem all bad, but saw user reports of bad typing experience
 
 Although building your own keyboard seems like a wonderful hobby it's not even that easy to order all parts from one shop and in the end it would be the most expensive (but also most rewarding). It would also come with more of a prototype feel and possibly be less durable. In the end I went with the 52-key Voyager and Kalih Choc Red Pro switches as these should be the most ergonomic and quiet.
 
-## The Cheapest Split Keyboard
 
 ## Software vs Hardware Keyboard Programming
 Before starting with Oryx (ZSA layer built on top of QMK) I used Karabiner with [Goku](https://github.com/yqrashawn/GokuRakuJoudo) which I still didn't get rid of fully due to application layer capabilities (e.g. one key to toggle VSCode and Browser depending on what is focused) but I trimmed down the config for Voyager significantly and kept it in case I go back to traditional / Mac keyboard in the future.
