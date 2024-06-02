@@ -197,11 +197,11 @@ const categories = [
         description: "Portable and foldable laptop stand. More height adjustments than Roost V2, slightly worse angle.",
         url: "https://nexstand.io/",
       },
-      {
-        title: "Carpio 2.0",
-        description: "Ergonomic wrist rest that I am not that happy with, not usable with Lift or tented keyboard.",
-        url: "https://deltahub.io/products/carpio-ergonomic-wrist-rest",
-      },
+      // {
+      //   title: "Carpio 2.0",
+      //   description: "Ergonomic wrist rest that I am not that happy with, not usable with Lift or tented keyboard.",
+      //   url: "https://deltahub.io/products/carpio-ergonomic-wrist-rest",
+      // },
       {
         title: "Delso Projuster 180x80cm",
         description: "Standing desk.",

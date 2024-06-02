@@ -50,13 +50,14 @@ function About(props) {
             development in elementary school and never stopped being{" "}
             <strong>passionate about software and technology</strong>.
           </Paragraph>
+          <Paragraph>I'm based in Brno, Czechia though I've lived in several other countries.</Paragraph>
           <Paragraph>
-            I'm based in Brno, Czechia though I occasionally do extended travel.
+            <strong>I enjoy learning, building and problem-solving. </strong>
+            I'm also enthusiastic about working on open-source projects and constantly seeking ways to enhance my workflow.
           </Paragraph>
-          <Paragraph>
-            <strong>I enjoy learning, building, problem solving</strong>,
-            working on open source and side projects.
-          </Paragraph>
+          {/* <Paragraph>
+            When offline I like to play complex board games or fail at circus arts 🤹‍♂️.
+          </Paragraph> */}
         </Section>
       </Container>
     );
