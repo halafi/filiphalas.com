@@ -1,0 +1,1189 @@
+/*
+*******************************************************************************
+Copyright Holder and License
+*******************************************************************************
+GRAMPS Cascading Style Sheet
+Style Name: Basic-Ash Stylesheet
+Style Author: Jason M. Simanek (2008)
+Note: Adapted from GRAMPS original Modern Style stylesheet
+*******************************************************************************
+This website was created with GRAMPS <http://www.gramps-project.org/>
+-------------------------------------------------------------------------------
+GRAMPS is a Free Software Project for Genealogy, offering a professional
+
+genealogy program, and a wiki open to all. It is a community project, created,
+developed and governed by genealogists.
+
+Go to <http://gramps-project.org/> to learn more!
+
+-------------------------------------------------------------------------------
+Copyright 2008 Jason M. Simanek
+Copyright 2009 Stephane Charette
+Copyright (C) 2008-2011 Rob G. Healey <robhealey1@gmail.com>
+Copyright 2011 Michiel D. Nauta
+Copyright 2018 Theo van Rijn
+Copyright (C) 2019      Serge Noiraud
+
+This file is part of the GRAMPS program.
+
+GRAMPS is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, version 2 of the License.
+
+GRAMPS is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+GRAMPS. If not, see <http://www.gnu.org/licenses/>.
+-------------------------------------------------------------------------------
+
+Color Palette
+-------------------------------------------------------------------------------
+
+black                   #000
+gray dark               #555
+gray                    #999
+gray light              #CCC
+gray very light         #EEE
+white                   #FFF
+-------------------------------------------------------------------------------
+Characteristic of this style is that it uses the full width of the browser
+window and that horizontal highlighting bars extend over the full width of
+the page.
+-------------------------------------------------------------------------------
+
+ NarrativeWeb Styles
+-------------------------------------------------------------------------------
+
+ General Elements
+----------------------------------------------------- */
+
+body {
+    font-family: sans-serif;
+    font-size: 100%;
+    color: black;
+    margin: 0px;
+    background-color: #EEE;
+}
+body > div {
+    clear: both;
+}
+#outerwrapper {
+    margin: 5px auto;
+    width: 98%;
+}
+#outerwrapper > div {
+    clear: both;
+}
+.content {
+    background-color: white;
+    border-top: solid 1px #999;
+}
+.content div.snapshot {
+    float: right;
+    margin: 2em;
+}
+#ThumbnailPreview div.snapshot {
+    float: right;
+    margin: 0;
+}
+.fullclear {
+    clear: both;
+}
+/* Less whitespace on smaller real estate. */
+@media only screen and (max-width: 1080px) {
+    .content {
+        padding: 0em 0.5em;
+    }
+    body#fullyearlinked table.calendar {
+        float: none;
+        width: 100%;
+    }
+}
+@media only screen and (width > 1080px) {
+    body#fullyearlinked table.calendar {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+/* General Text
+----------------------------------------------------- */
+h1 {
+    font-size: x-large;
+    font-weight: bold;
+    padding-left: 15px;
+}
+h2 {
+    display:block;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+h3 {
+    font-size: large;
+    padding-left: 15px;
+}
+h4 {
+    font-size: medium;
+    background-color: #CCC;
+    padding-left: 15px;
+    margin-bottom: 0px;
+    border-bottom: solid 1px #999;
+}
+p#description {
+    padding-left: 15px;
+}
+a {
+    color: black;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+a[href]:hover, a[href]:active {
+    text-decoration: underline;
+}
+.grampsid {
+    font-family: monospace;
+    font-size: smaller;
+    color: #999;
+}
+
+/* Header
+----------------------------------------------------- */
+#SiteTitle {
+    width: 95%;
+    color: #555;
+}
+#user_header, #user_footer {
+    padding-left: 15px;
+}
+
+/* Navigation
+----------------------------------------------------- */
+div#nav, #subnavigation {
+    border: solid 1px #EEE; /* needed by IE7 */
+    position: relative;
+}
+#subnavigation ul {
+    overflow: hidden;
+}
+div#nav ul, #subnavigation ul {
+    list-style: none;
+    padding-left: 15px;
+}
+#subnavigation ul {
+    border-bottom: solid 1px #999;
+}
+div#nav.wrappernav.ltr {
+    float: left;
+}
+div#nav.wrappernav.rtl {
+    float: right;
+}
+div#nav ul li a, #subnavigation ul li a {
+    display: block;
+    font-size: smaller;
+    font-weight: bold;
+    border-bottom: solid 1px #CCC;
+}
+div#nav ul li a:hover, #subnavigation ul li a:hover {
+    text-decoration: none;
+    background-color: #CCC;
+    border-bottom: solid 1px black;
+}
+div#ltr.pnav ul.ltr li.CurrentSection, div#rtl.pnav ul.rtl li.CurrentSection,
+div#ltr ul.ltr li.CurrentSection, div#rtl ul.rtl li.CurrentSection {
+    font-weight: bold;
+    font-style: italic;
+    background-color: #CCC;
+}
+div#nav ul li.CurrentSection a {
+    position: relative;
+    top: 1px;
+    border: solid 1px #999;
+    border-bottom-style: none;
+    background-color: white;
+}
+#subnavigation ul li.CurrentSection a {
+    background-color: white;
+}
+div#nav li.lang {
+    font-family: sans-serif;
+    font-size: smaller;
+    font-weight: bold;
+}
+div#nav li.lang:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    padding-right: 5px;
+    background-color: #CCC;
+}
+div#nav ul.lang {
+    position: absolute;
+    top: 1.5em;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+    width: 430px;
+    background-color: #CCC;
+    font-family: sans-serif;
+}
+div#nav ul.lang:hover {
+    float: initial;
+}
+div#nav ul.lang li {
+    float: none;
+    padding: 5px;
+    width: 300px;
+}
+.ltr, .ltr li {
+    float: left;
+    list-style: none;
+}
+li:not(:first-child) {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.rtl, .rtl li {
+    float: right;
+    list-style: none;
+}
+/* Alphabet Navigation
+----------------------------------------------------- */
+div#alphanav {
+    background-color: #EEE;
+}
+div#alphanav ul {
+    list-style: none;
+    border-width: 2px 0px 4px 0px;
+    border-style: solid;
+    border-color: black;
+    margin: 0px;
+    padding-left: 15px;
+    /* float container stretch, see www.quirksmode.org/css/clearing.html */
+    overflow: hidden;
+}
+div#alphanav ul li {
+    float: left;
+    font-size: larger;
+    font-weight: bold;
+}
+div#alphanav ul li:after {
+    content: " |";
+}
+div#alphanav ul li a {
+    display: block;
+    padding: 4px 8px;
+    line-height: 100%;
+    float: left;
+}
+div#alphanav ul li a:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+/* Responsive navigation */
+button.navIcon {
+    display: none;
+}
+
+div#header.rtl h1 {
+    margin-right: 40px;
+}
+div#header.rtl button {
+    float: right;
+}
+div#header.ltr h1 {
+    margin-left: 40px;
+}
+div#header.ltr button {
+    float: left;
+}
+div#header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div#nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    /* Use less & all realestate on mobiles. */
+    div#outerwrapper {
+        margin: 5px auto;
+        width: 100%;
+    }
+
+    .nav {
+        background: none; /* Works in IE too. */
+    }
+
+    /* Undo some of the #nav styles  - to enable the class .nav */
+    .nav ul, #subnavigation ul {
+        list-style: none;
+        min-width: unset;
+        margin: 0;
+        padding: 0;
+    }
+    .nav ul li, #subnavigation ul li {
+        float: unset;
+        display: unset
+    }
+    li:first-child {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    /* Start with hidden menu options */
+    /* .nav li:not(:first-child) {display: none;} */
+    .nav li {display: none;}
+    .nav ul {display: none;}
+
+    button.navIcon.rtl {
+        text-align:right;
+    }
+    button.navIcon.ltr {
+        text-align:left;
+    }
+    button.navIcon {
+        display: block;
+        font-size:4.9em;
+        border: 0px;
+        color: #555;
+        background-color: #EEE;
+    }
+
+    h1#SiteTitle.ltr  {
+        float: left;
+    }
+    h1#SiteTitle.rlt  {
+        float: right;
+    }
+    .nav.responsive {
+        position: absolute;
+        display: block;
+        z-index: 100;
+        font-size: 36px;
+        background-color: #CCC;
+        width: 100%;
+    }
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        margin-right: 10px;
+    }
+    .nav.rtl.responsive li.lang {
+        text-align: right;
+    }
+    .nav.ltr.responsive li.lang {
+        text-align: left;
+    }
+    .nav.responsive li {
+        display: block;
+        /* required by IE */
+        clear: both;
+        width: 380px;
+        background-color: #CCC;
+    }
+
+    div#nav ul, #subnavigation ul {
+        padding-left: 0px;
+    }
+
+    .content {
+        padding: 0em 0.5em;
+    }
+    .lang {
+        position: relative;
+        background-color: #CCC;
+    }
+    .lang > .lang {
+        top: 0;
+        /* left: 100%; */
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px 6px;
+        border-radius: 0 6px 6px 6px;
+        background-color: #CCC;
+    }
+    .lang:hover > .lang {
+        display: block;
+    }
+}
+
+/* Main Table
+----------------------------------------------------- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+div#summaryarea > table.infolist,
+div#parents > table.infolist,
+h3 + table.infolist {
+    width: auto;
+}
+table tr th {
+    background-color: #EEE;
+    border-top: solid 1px #999;
+    border-bottom: solid 1px #999;
+}
+table tr th:first-child {
+    border-left: solid 1px #999;
+}
+table tr th:last-child {
+    border-right: solid 1px #999;
+}
+table.relationships.ltr tr th, table.infolist.ltr tr th, table.primobjlist.ltr tr th, table.eventlist.ltr tr th {
+    text-align: left;
+}
+table.relationships.rtl tr th, table.infolist.rtl tr th, table.primobjlist.rtl tr th, table.eventlist.rtl tr th {
+    text-align: right;
+}
+table.primobjlist tr th {
+    background-color: #CCC;
+}
+table td, table th {
+    vertical-align: top;
+    padding-left: 1ex;
+}
+table.primobjlist td {
+    vertical-align: middle;
+}
+table td:first-child, table th:first-child {
+    padding-left: 15px;
+}
+table.primobjlist tr a {
+    display: block; /* make whole td clickable */
+}
+table.primobjlist tr.BeginLetter td, table.primobjlist tr.BeginSurname td {
+    border-top: solid 1px #CCC;
+}
+td.ColumnLetter, td.ColumnRowLabel {
+    font-weight: bold;
+}
+td.ColumnBirth, td.ColumnDeath, td.ColumnPartner, td.ColumnParents {
+    font-size: 90%;
+}
+table.infolist tr td ol {
+    margin: 0px;
+}
+#summaryarea table.infolist td.ColumnAttribute,
+#parents table.infolist td.ColumnAttribute,
+#families table.infolist td.ColumnType,
+#families table.infolist td.ColumnAttribute {
+    color: #555;
+}
+/* div summaryarea is missing for events, sources and repos! */
+h3 + table.infolist td.ColumnAttribute {
+    color: #555;
+}
+table.primobjlist td.ColumnParents span.mother:before {
+    content: "+ ";
+}
+
+/* Surnames
+----------------------------------------------------- */
+table#SortByName td.ColumnSurname, table#SortByName th.ColumnSurname,
+table#SortByCount td.ColumnQuantity, table#SortByCount th.ColumnQuantity {
+    background-color: #EEE;
+}
+table#SortByName thead th.ColumnSurname a:after,
+table#SortByCount thead th.ColumnQuantity a:after {
+    content: " \2193";
+}
+table.surname td.ColumnName {
+    background-color: #EEE;
+}
+table#SortByName tr:hover td.ColumnSurname,
+table#SortByCount tr:hover td.ColumnQuantity {
+    background-color: #DDE;
+}
+table#SortByName tr:hover,
+table#SortByCount tr:hover,
+table#SortByName tr:hover td.ColumnQuantity,
+table#SortByCount tr:hover td.ColumnSurname {
+    background-color: #DDE;
+}
+table.surname tr:hover,
+table.surname tr:hover td.ColumnName {
+    background-color: #DDE;
+}
+
+/* Individuals
+----------------------------------------------------- */
+table.IndividualList td.ColumnSurname {
+    background-color: #EEE;
+}
+#parents table.infolist tr:hover,
+table.IndividualList tr:hover,
+table.IndividualList tr:hover td.ColumnSurname {
+    background-color: #DDE;
+}
+
+/* Places
+----------------------------------------------------- */
+#Places table.infolist td.ColumnName {
+    background-color: #EEE;
+}
+#Places table.infolist tr:hover,
+#Places table.infolist tr:hover td.ColumnName {
+    background-color: #DDE;
+}
+
+/* Events
+----------------------------------------------------- */
+#EventList table.infolist tr.BeginType td {
+    border-top:dashed 1px #CCC;
+}
+#EventList table.infolist tr.BeginLetter td {
+    border-top:solid 1px #CCC;
+}
+#EventList table.infolist td.ColumnType {
+    background-color: #EEE;
+}
+#EventList td.ColumnPerson a {
+    display: inline;
+}
+#EventList table.infolist tr:hover,
+#EventList table.infolist tr:hover td.ColumnType {
+    background-color: #DDE;
+}
+#EventList td.ColumnPerson span.person:after,
+#EventList td.ColumnPerson span.father:after,
+#EventList td.ColumnPerson span.mother:after,
+#EventDetail td.ColumnPerson span.person:after,
+#EventDetail td.ColumnPerson span.father:after,
+#EventDetail td.ColumnPerson span.mother:after {
+    content: ", ";
+}
+#EventList td.ColumnPerson span.fatherNmother:after,
+#EventDetail td.ColumnPerson span.fatherNmother:after {
+    content: " + ";
+}
+#EventList td.ColumnPerson span.person:last-child:after,
+#EventList td.ColumnPerson span.father:last-child:after,
+#EventList td.ColumnPerson span.mother:last-child:after,
+#EventDetail td.ColumnPerson span.person:last-child:after,
+#EventDetail td.ColumnPerson span.father:last-child:after,
+#EventDetail td.ColumnPerson span.mother:last-child:after {
+    content: "";
+}
+table.eventlist tbody tr td:first-child,
+table.eventlist thead tr th:first-child {
+    padding-left: 10px;
+}
+table.eventlist tbody tr td.ColumnSources {
+    width: 5%;
+}
+table.eventlist tbody tr td.ColumnDate {
+    width: 15%;
+}
+table.eventlist td.ColumnEvent,
+table.eventlist td.ColumnDate,
+table.eventlist td.ColumnPlace {
+    font-weight: bold;
+}
+#attributes table.infolist td.ColumnType {
+    width: 10%;
+    padding-left: 15px;
+}
+#attributes table.infolist td.ColumnSources {
+    width: 5%;
+    padding-left: 5px;
+}
+#WebLinks table.infolist td.ColumnType {
+    width: 10%;
+    padding-left: 15px;
+}
+
+/* Gallery
+----------------------------------------------------- */
+#GalleryNav {
+    text-align: center;
+    margin: 2em 0px;
+}
+#GalleryNav a {
+    font-weight: bold;
+    background-color: #EEE;
+    border: solid 1px #999;
+    margin: 1em;
+}
+#GalleryNav a#Previous {
+    padding: .4em .7em .3em .7em;
+}
+#GalleryNav a#Next {
+    padding: .4em 1.9em .3em 1.9em;
+}
+#GalleryCurrent {
+    font-size: larger;
+}
+#GalleryTotal {
+    font-weight: normal;
+}
+#GalleryDisplay {
+    margin: 0px auto;
+    position: relative;
+}
+#GalleryDisplay img {
+    margin: 0px auto;
+    display: block;
+    border: solid 1px #999;
+    height: auto;
+}
+
+@media only screen and (max-width: 1600px) {
+    #GalleryDisplay img {
+        max-width: 100%;
+    }
+}
+
+#GalleryDetail h3 {
+    text-align: center;
+}
+
+/*    Sources
+------------------------------------------------------ */
+div#SourceDetail {
+    margin: 0 auto;
+}
+#Sources table.infolist tr:hover,
+#Sources table.infolist tr:hover td.ColumnType {
+    background-color: #DDE;
+}
+
+/* Contact
+----------------------------------------------------- */
+#Contact {
+    overflow: hidden;
+}
+#Contact #summaryarea {
+    background-color: #EEE;
+    border: solid 1px #999;
+}
+#Contact #GalleryDisplay img {
+    float: right;
+    border: solid 1px #999;
+}
+#Contact #researcher, #Contact #researcher h3 {
+    font-size: larger;
+    padding-left: 0px;
+}
+#Contact #streetaddress, #Contact #locality, #Contact #email {
+    display: block;
+}
+#Contact #city:after {
+    content: ",";
+}
+@media only screen and (max-width: 1080px) {
+    #Contact,
+    #Contact #GalleryDisplay img {
+        max-width: 100%;
+    }
+}
+
+/* Download
+----------------------------------------------------- */
+#Download table.download a {
+    display: block;
+}
+
+/* Subsection
+----------------------------------------------------- */
+#Home #GalleryDisplay, #Introduction #GalleryDisplay,
+                       #Contact #GalleryDisplay {
+    float: right;
+    margin: 1em;
+}
+#Home #GalleryDisplay img, #Introduction #GalleryDisplay img,
+                       #Contact #GalleryDisplay img {
+    display: block;
+    max-width: 950px;
+    height: auto;
+    float: right;
+}
+@media only screen and (max-width: 1080px) {
+    #Home #GalleryDisplay img, #Introduction #GalleryDisplay img,
+          #Contact #GalleryDisplay img {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+#Home p, #Introduction p {
+    padding-left: 15px;
+}
+.subsection {
+    clear: both;
+    overflow-x: auto;
+}
+.subsection p {
+    margin: 0px;
+}
+
+/* Subsection : Families
+----------------------------------------------------- */
+#families table.infolist td.ColumnValue.Child table.infolist tr:hover,
+table.relationships tr:hover {
+    background-color: #DDE;
+}
+div.content table.tags {
+    text-align: left;
+    width: auto;
+}
+
+div#families table.fixed_subtables table.eventlist {
+    table-layout: fixed;
+}
+div#families table.fixed_subtables table.eventlist th:first-child {
+    width: 9em;
+}
+div#families table.fixed_subtables table.eventlist th.ColumnDate {
+    width: 12%;
+}
+div#families table.fixed_subtables table.eventlist th.ColumnSources {
+    width: 5em;
+}
+div#families table.attrlist td.ColumnType {
+    color: black;
+}
+div#families table.fixed_subtables .Child table.eventlist .ColumnName {
+    width: 60%;
+}
+div#families table.fixed_subtables .Child table.eventlist .ColumnDate {
+    width: 20%;
+}
+
+/* Subsection : Gallery
+----------------------------------------------------- */
+#gallery {
+    background-color: green;
+}
+#indivgallery {
+    background-color: white;
+}
+#indivgallery a {
+    color: black;
+    text-decoration: none;
+    word-wrap: break-word;
+    display: block;
+}
+#gallery .gallerycell.ltr {
+    float: left;
+}
+#gallery .gallerycell.rtl {
+    float: right;
+}
+#gallery .gallerycell {
+    width: 130px;
+    height: 150px;
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    border-top: solid 1px #999;
+    border-right: solid 1px #999;
+}
+#gallery .thumbnail {
+    font-size: smaller;
+    margin: 3em auto;
+}
+#indivgallery .thumbnail {
+    float: left;
+    width: 160px;
+    height: 220px;
+    font-size: smaller;
+    text-align: center;
+    margin: 0.8em 0.5em;
+    background-color: white;
+}
+#indivgallery h4 + .thumbnail {
+    margin-left: 15px;
+    /* Problem: if there are more thumnails then fit on a single row, the
+     *          first thumnail on each next row should also have a margin-left
+     *          of 15 px. */
+}
+#gallery div.indexno {
+    float: right;
+    font-size: large;
+    text-align: center;
+    background-color: #CCC;
+    color: #555;
+    margin: 0;
+}
+#indivgallery div.date {
+    float: right;
+    width: 1.8em;
+    font-size: large;
+    text-align: center;
+    background-color: #CCC;
+    color: #555;
+}
+#indivgallery .thumbnail ul {
+    font-size: smaller;
+    list-style: none;
+    padding: 0px;
+}
+#indivgallery .thumbnail ul li:first-child {
+    border-style: none;
+}
+#indivgallery .thumbnail ul li {
+    border-top: dashed 1px #CCC;
+    border-top-style: dashed;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#gallery img {
+    border: solid 1px #999;
+}
+#indivgallery img {
+    border: solid 1px #999;
+}
+#indivgallery span {
+/* ## remove this line and the comment markers from the line below to hide description in Indivifual Gallery
+    display: none; */
+}
+div.snapshot div.thumbnail {
+    text-align: center;
+}
+
+/* Subsection : Narrative
+----------------------------------------------------- */
+h4 + div.grampsstylednote, a.familymap {
+    margin: 1em 15px;
+}
+i.NoteType {
+    font-weight: bold;
+    font-size: .8em;
+}
+i + div.grampsstylednote p {
+    margin: 0 0 0.3em 0;
+}
+div.grampsstylednote p {
+    padding-bottom: 0.6em;
+}
+div.grampsstylednote a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #555;
+}
+div.grampsstylednote a:visited {
+    color: red;
+}
+
+/* Subsection : Family Map
+----------------------------------------------------- */
+a.familymap {
+    display: block;
+}
+a.family_map {
+    margin-left: 15px;
+}
+
+/* Subsection : References
+----------------------------------------------------- */
+#references ol {
+    margin-left: 2em;
+}
+
+/* Subsection : Source References
+----------------------------------------------------- */
+#sourcerefs ol#srcr {
+    counter-reset: itema;
+    list-style-type: none;
+    display: block;
+    margin-top: .1em;
+}
+#sourcerefs ol#citr {
+    counter-reset: itemb;
+    list-style-type: none;
+}
+#sourcerefs ol#srcr > li::before {
+    content: counter(itema);
+}
+#sourcerefs ol#citr > li::before {
+    content: counter(itema)counter(itemb, lower-alpha);
+}
+#sourcerefs ol#srcr > li {
+    counter-increment: itema;
+    margin-top: .1em;
+}
+#sourcerefs ol#citr > li {
+    counter-increment: itemb;
+    margin-top: .1em;
+}
+#sourcerefs ol#citr ul {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Subsection : Pedigree
+----------------------------------------------------- */
+.pedigreegen {
+    list-style-type: none;
+    padding-left: 15px;
+}
+.pedigreegen li ol {
+    list-style-type: none;
+}
+.pedigreegen li ol li ol {
+    list-style-type: decimal;
+}
+.pedigreegen ol.spouselist {
+    list-style-type: none;
+}
+.pedigreegen ol.spouselist li.spouse ol {
+    list-style-type: decimal;
+}
+.spouse:before {
+    content: "+ ";
+}
+.thisperson {
+    font-weight: bold;
+}
+.thisperson > ol {
+    font-weight: normal;
+}
+
+/* Footer
+----------------------------------------------------- */
+#footer {
+    clear: both;
+    padding-top: 1em;
+    background-color: #CCC;
+    border-top: solid 1px #555;
+}
+#footer > * {
+    background-color: #EEE;
+    font-size: 80%;
+}
+#footer p#createdate {
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 1em;
+}
+#footer p#copyright {
+    float: right;
+    width: 40%;
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* Updates
+----------------------------------------------------- */
+#Updates table.list td.date {
+    width: 20%;
+}
+
+/* Overwritten
+----------------------------------------------------- */
+body#FamilyMap {
+    background-color: #EEE !important;
+}
+
+/* Calendar Styles
+===================================================== */
+.dropmenu.rtl li {
+    text-align: right;
+}
+.dropmenu.ltr li {
+    text-align: left;
+}
+table.calendar {
+    table-layout: fixed;
+    empty-cells: show;
+}
+.calendar thead th {
+    text-align: center;
+    border-top-style: none;
+}
+.calendar thead th.monthName {
+    font-size: xx-large;
+    font-weight: normal;
+    background-color: white;
+    border-bottom-style: none;
+    padding-top: 1em;
+    vertical-align: top;
+    height: 2em;
+}
+.calendar thead th abbr {
+    border-bottom-style: none;
+}
+.calendar tfoot tr td {
+    border-top: solid 4px #999;
+    vertical-align: middle;
+}
+
+/* Calendar : Date Numeral */
+.calendar div.date {
+    float: right;
+    font-size: large;
+    text-align: center;
+    background-color: #CCC;
+    color: #555;
+}
+
+/* Calendar : Date Container */
+.calendar td {
+    padding: 0px 5px 0px 1ex;
+    border-width: 1px 0px 0px 1px;
+    border-style: solid;
+    border-color: #CCC;
+    background-color: #EEE;
+}
+.calendar td:first-child {
+    border-left-style: none;
+    padding: 0px 5px 0px 1ex;
+}
+.calendar tbody tr:first-child td {
+    border-top-style: none;
+}
+
+/* Calendar : Date Detail */
+.calendar td ul {
+    font-size: smaller;
+    list-style: none;
+    padding: 0px;
+}
+.calendar td ul li {
+    border-top: dashed 1px #CCC;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.calendar td ul li:first-child {
+    border-style: none;
+}
+
+/* Calendar : Birthday, Anniversary, Highlight */
+.calendar td.highlight {
+    background-color: white;
+}
+.calendar td.highlight div.date {
+    color: black;
+    background-color: #CCC;
+}
+
+/* Calendar : Previous-Next Month */
+.calendar td.previous,
+.calendar td.next,
+.calendar td.previous div.date,
+.calendar td.next div.date {
+    color: #CCC;
+    background-color: #EEE;
+}
+
+/* Calendar : Full Year */
+body#fullyearlinked div.content {
+    overflow: hidden;
+}
+body#fullyearlinked table.calendar {
+    height: 18em;
+    border: solid 1px black;
+}
+body#fullyearlinked table.calendar thead th {
+    height: 2em;
+}
+body#fullyearlinked table.calendar thead th.monthName {
+    font-size: large;
+    padding: 2px 0px;
+}
+body#fullyearlinked table.calendar tbody td {
+    height: 3em;
+}
+body#OneDay div.content {
+    overflow: hidden;
+}
+body#OneDay h3 {
+    font-size: xx-large;
+    vertical-align: top;
+    height: 2em;
+}
+#WebCal table.calendar tfoot {
+    display: none;
+}
+#WebCal table.calendar tr td {
+    word-wrap: break-word;
+    padding: 2px;
+}
+#WebCal .calendar tr td .empty {
+    border: 5px solid rgba(255,255,255,.0);
+}
+#WebCal .calendar tr td .clickable {
+    border: 5px solid rgba(255,255,255,.0);
+}
+#WebCal .calendar tr td .clickable:hover {
+    display: block;
+    overflow:auto;
+    word-wrap: break-word;
+    cursor: text;
+    border-radius: 10px 0px 10px 10px;
+    border: 5px solid #555;
+    padding: 0px;
+}
+body#fullyearlinked #YearGlance tbody td {
+    height:48px;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 6px;
+}
+body#fullyearlinked #YearGlance tbody td .date {
+    font-size: 30px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 45px;
+    float: none;
+    border: 5px solid rgba(0,0,0,.0);
+}
+body#fullyearlinked #YearGlance tbody td:hover .date {
+    border-radius: 45px;
+    border: 5px solid;
+}
+h4 button.icon {
+    width: 1.9em;
+    border: 0px solid;
+    padding: 0;
+    opacity: 1;
+    transform: rotate(90deg);
+    transition: transform 200ms ease-out 0s;
+    background: transparent;
+}
+h4 button.icon-close {
+    transform: rotate(90deg);
+    transition: transform 0.2s linear;
+}
+h4 button.icon-open {
+    transform: rotate(180deg);
+    transition: transform 0.2s linear;
+}
+svg {
+  fill: black;
+}
+/* Go to the top of the page */
+#gototop {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 999;
+  border: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+}
+
+#gototop:hover {
+  background-color: #CCC;
+}

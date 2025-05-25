@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html xml:lang="en-US" lang="en-US" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head dir="ltr" lang="en-US">
+	<title>Tomanová Dagmar předci - Rodinná mapa</title>
+	<meta charset="UTF-8" />
+	<meta name ="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=10.0, user-scalable=yes" />
+	<meta name ="apple-mobile-web-app-capable" content="yes" />
+	<meta name="generator" content="Gramps 6.0.0 http://gramps-project.org/" />
+	<meta name="author" content="Filip" />
+	<meta name="robots" content="noindex" />
+	<meta name="googlebot" content="noindex" />
+	<link href="../../../images/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="../../../css/ancestortree.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../../../css/narrative-print.css" media="print" rel="stylesheet" type="text/css" />
+	<link href="../../../css/narrative-screen.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../../../css/Basic-Ash.css" media="screen" rel="alternate stylesheet" title="Základní-Jasan" type="text/css" />
+	<link href="../../../css/Basic-Blue.css" media="screen" rel="alternate stylesheet" title="Základní-Modř" type="text/css" />
+	<link href="../../../css/Basic-Cypress.css" media="screen" rel="alternate stylesheet" title="Základní-Cypřiš" type="text/css" />
+	<link href="../../../css/Basic-Lilac.css" media="screen" rel="alternate stylesheet" title="Základní-Šeřík" type="text/css" />
+	<link href="../../../css/Basic-Peach.css" media="screen" rel="alternate stylesheet" title="Základní-Broskev" type="text/css" />
+	<link href="../../../css/Basic-Spruce.css" media="screen" rel="alternate stylesheet" title="Základní-Smrk" type="text/css" />
+	<link href="../../../css/Mainz.css" media="screen" rel="alternate stylesheet" title="Mainz" type="text/css" />
+	<link href="../../../css/Nebraska.css" media="screen" rel="alternate stylesheet" title="Nebraska" type="text/css" />
+	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
+	<link href="../../../css/narrative-maps.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://openlayers.org/en/v6.15.1/build/ol.js" type="text/javascript"></script>
+	<link href="https://openlayers.org/en/v6.15.1/css/ol.css" rel="stylesheet" type="text/css" />
+</head>
+<body id ="FamilyMap">
+	<div id="outerwrapper">
+		<div class="ltr" id="header">
+			<button href="javascript:void(0);" class="navIcon" onclick="navFunction()">&#8801;</button>
+			<h1 class="nav" id="SiteTitle">Tomanová Dagmar předci</h1>
+		</div>
+		<div class="wrappernav ltr" id="nav" role="navigation">
+			<div class="container">
+				<ul class="nav" id="dropmenu">
+					<li><a href="../../../individuals.html" title="Jednotlivci">Jednotlivci</a></li>
+					<li><a href="../../../index.html" title="Příjmení">Příjmení</a></li>
+					<li><a href="../../../families.html" title="Rodiny">Rodiny</a></li>
+					<li><a href="../../../repositories.html" title="Archivy">Archivy</a></li>
+					<li><a href="../../../statistics.html" title="Statistiky">Statistiky</a></li>
+				</ul>
+			</div>
+		</div>
+		<button id="gototop" onclick="GoToTop()" title="Go to top">
+			<svg class="triangle" viewBox="0 0 100 100">
+				<polygon points="0,100 100,100, 50,10">
+				</polygon>
+			</svg>
+		</button>
+	
+<script>
+//Get the button
+var gototop = document.getElementById("gototop");
+
+// When the user scrolls down 200px from the top of the document,
+// show the button
+window.onscroll = function() {scroll()};
+
+function scroll() {
+  if (document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200) {
+    gototop.style.display = "block";
+  } else {
+    gototop.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function GoToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+		<div class="content" id="FamilyMapDetail">
+			<h3>Sledování Zahrádka, Jakub</h3>
+			<p id="description">
+			Tato mapová stránka reprezentuje osobu a její potomky se všemi jejich událostmi/místy. Umístíte-li kurzor myši na značku, zobrazí se název místa. Značky a seznam odkazů jsou chronologicky setříděny. Kliknutí na název místa v sekci Odkazy vás přenese na stránku místa.
+			</p>
+			<div id="map_canvas">
+			</div>
+			<div class="ol-popup" id="popup"><a class="ol-popup-closer" href="#" id="popup-closer"></a><div class="ol-popup-title" id="popup-title"></div><div class="ol-popup-content" id="popup-content"></div></div>
+			<div class="ol-popup" id="tooltip"><div id="tooltip-content"></div></div>
+			<div class="subsection" id="references">
+				<h4>Odkazy</h4>
+				<table class="infolist ltr">
+					<thead>
+						<tr>
+							<th class="ColumnDate">Datum</th>
+							<th class="ColumnPlace">Název místa</th>
+							<th class="ColumnType">Typ události</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ColumnDate">8. zář 1743</td>
+							<td class="ColumnPlace"><a href="../../../plc/b/6/fdcd9a993b6a6aaf0d9691d86b.html" title="Svatoslav, Třebíč, Kraj Vysočina, Česká Republika">Svatoslav, Třebíč, Kraj Vysočina, Česká Republika</a></td>
+							<td class="ColumnType">Narození</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">9. čvc 1748</td>
+							<td class="ColumnPlace"><a href="../../../plc/c/7/fdcd62233ec46a466c9a5c167c.html" title="Kožichovice, Třebíč, Kraj Vysočina, Česká Republika">Kožichovice, Třebíč, Kraj Vysočina, Česká Republika</a></td>
+							<td class="ColumnType">Narození</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">16. lis 1820</td>
+							<td class="ColumnPlace"><a href="../../../plc/c/7/fdcd62233ec46a466c9a5c167c.html" title="Kožichovice, Třebíč, Kraj Vysočina, Česká Republika">Kožichovice, Třebíč, Kraj Vysočina, Česká Republika</a></td>
+							<td class="ColumnType">Úmrtí</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate"></td>
+							<td class="ColumnPlace"><a href="../../../plc/c/7/fdcd62233ec46a466c9a5c167c.html" title="Kožichovice, Třebíč, Kraj Vysočina, Česká Republika">Kožichovice, Třebíč, Kraj Vysočina, Česká Republika</a></td>
+							<td class="ColumnType">Zaměstnání</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">19. čer 1768</td>
+							<td class="ColumnPlace"><a href="../../../plc/c/7/fdcd62233ec46a466c9a5c167c.html" title="Kožichovice, Třebíč, Kraj Vysočina, Česká Republika">Kožichovice, Třebíč, Kraj Vysočina, Česká Republika</a></td>
+							<td class="ColumnType">Manželství</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">14. čer 1777</td>
+							<td class="ColumnPlace"><a href="../../../plc/c/7/fdcd62233ec46a466c9a5c167c.html" title="Kožichovice, Třebíč, Kraj Vysočina, Česká Republika">Kožichovice, Třebíč, Kraj Vysočina, Česká Republika</a></td>
+							<td class="ColumnType">Narození</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">28. úno 1817</td>
+							<td class="ColumnPlace"><a href="../../../plc/c/7/fdcd62233ec46a466c9a5c167c.html" title="Kožichovice, Třebíč, Kraj Vysočina, Česká Republika">Kožichovice, Třebíč, Kraj Vysočina, Česká Republika</a></td>
+							<td class="ColumnType">Úmrtí</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">15. zář 1834</td>
+							<td class="ColumnPlace"><a href="../../../plc/c/7/fdcd62233ec46a466c9a5c167c.html" title="Kožichovice, Třebíč, Kraj Vysočina, Česká Republika">Kožichovice, Třebíč, Kraj Vysočina, Česká Republika</a></td>
+							<td class="ColumnType">Úmrtí</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<script deter="deter" style="width =100%; height =100%;" type="text/javascript">
+		
+  var marker_png = '../../../images/marker.png';
+
+		
+  window.addEventListener("load", function() {
+    var map;
+    var heat = 'markers';
+    var tracelife = [
+    [15.911634, 49.197282, 'Kožichovice, Třebíč, Kraj Vysočina, Česká Republika', "<p><a href='../../../ppl/2/8/fdcd9d08ab230d317977fce182.html' title='I0192' target='_self'>Zahrádka, Jakub</a>:<a href='../../../evt/0/5/fdd2d55641b760c54d075afea50.html' title='9. čvc 1748' target='_self'>Narození</a> (9. čvc 1748)" + "<br><a href='../../../ppl/2/8/fdcd9d08ab230d317977fce182.html' title='I0192' target='_self'>Zahrádka, Jakub</a>:<a href='../../../evt/9/6/fdd2d577ddffc3417b84b96d69.html' title='16. lis 1820' target='_self'>Úmrtí</a> (16. lis 1820)" + "<br><a href='../../../ppl/2/8/fdcd9d08ab230d317977fce182.html' title='I0192' target='_self'>Zahrádka, Jakub</a>:<a href='../../../evt/c/b/fdd2d5bf18840cac9e848a90cbc.html' title='' target='_self'>Zaměstnání</a> ()" + "<br><a href='../../../ppl/0/b/fdcd9d19a127e6847561dd9d7b0.html' title='I0193' target='_self'>Doležalová, Marie</a>:<a href='../../../evt/6/9/fdd2d669f723fd6e2a5bd990696.html' title='28. úno 1817' target='_self'>Úmrtí</a> (28. úno 1817)" + "<br><a href='../../../ppl/0/b/fdcd9d19a127e6847561dd9d7b0.html' title='I0193' target='_self'>Doležalová, Marie</a>:<a href='../../../evt/a/2/fdd2da8c6d63e4fcd33d092e12a.html' title='19. čer 1768' target='_self'>Manželství</a> (19. čer 1768)" + "<br><a href='../../../ppl/2/8/fdcd9d08ab230d317977fce182.html' title='I0192' target='_self'>Zahrádka, Jakub</a>:<a href='../../../evt/a/2/fdd2da8c6d63e4fcd33d092e12a.html' title='19. čer 1768' target='_self'>Manželství</a> (19. čer 1768)" + "<br><a href='../../../ppl/9/e/fdcd665b74f3ff7e3bd39fca3e9.html' title='I0145' target='_self'>Zahrádka, Jan</a>:<a href='../../../evt/1/2/fdcd66c353815d292e2ec5eaf21.html' title='14. čer 1777' target='_self'>Narození</a> (14. čer 1777)" + "<br><a href='../../../ppl/9/e/fdcd665b74f3ff7e3bd39fca3e9.html' title='I0145' target='_self'>Zahrádka, Jan</a>:<a href='../../../evt/d/0/fdcd670ee884ae936917f5ee10d.html' title='15. zář 1834' target='_self'>Úmrtí</a> (15. zář 1834)"],
+    [15.799534, 49.329306, 'Svatoslav, Třebíč, Kraj Vysočina, Česká Republika', "<p><a href='../../../ppl/0/b/fdcd9d19a127e6847561dd9d7b0.html' title='I0193' target='_self'>Doležalová, Marie</a>:<a href='../../../evt/c/a/fdd2d63171c5991213b399139ac.html' title='8. zář 1743' target='_self'>Narození</a> (8. zář 1743)"],];;
+    var iconStyle = new ol.style.Style({
+      image: new ol.style.Icon(({
+        anchor: [0.2, 48],
+        anchorXUnits: 'fraction',
+        anchorYUnits: 'pixels',
+        opacity: 1.0,
+        src: marker_png
+      }))
+    });
+    var markerSource = new ol.source.Vector({
+    });
+    var centerCoord = new ol.proj.transform([15.85558400, 49.26329400], 'EPSG:4326', 'EPSG:3857');
+    var zoom = 6;
+    var radius = 0;
+    var blur = 0;
+    for (var i = 0; i < tracelife.length; i++) {
+      var loc = tracelife[i];
+      var iconFeature = new ol.Feature({
+       geometry: new ol.geom.Point(ol.proj.transform([loc[0], loc[1]],
+                                                     'EPSG:4326', 'EPSG:3857')),
+       name: loc[2],
+       data: loc[3],
+      });
+      iconFeature.setStyle(iconStyle);
+      markerSource.addFeature(iconFeature);
+    }
+    markerLayer = new ol.layer.Vector({
+      source: markerSource,
+      style: iconStyle
+    });
+    tooltip = new ol.layer.Vector({
+      source: markerSource,
+      style: iconStyle
+    });
+    heatmap = new ol.layer.Heatmap({
+      source: markerSource,
+      radius: radius,
+      blur: blur,
+      style: iconStyle
+    });
+    if (heat == "heatmap") {
+      map = new ol.Map({
+                   target: 'map_canvas',
+                   layers: [new ol.layer.Tile({ source: new ol.source.OSM() }),
+                            heatmap],
+                   view: new ol.View({ center: centerCoord, zoom: zoom })
+                   });
+    } else {
+      map = new ol.Map({
+                   target: 'map_canvas',
+                   layers: [new ol.layer.Tile({ source: new ol.source.OSM() }),
+                            markerLayer, tooltip],
+                   view: new ol.View({ center: centerCoord, zoom: zoom })
+                   });
+    };
+
+		
+    var element = document.getElementById('popup');
+    var content = document.getElementById('popup-content');
+    var ptitle = document.getElementById('popup-title');
+    var closer = document.getElementById('popup-closer');
+    var tip = document.getElementById('tooltip');
+    var tipcontent = document.getElementById('tooltip-content');
+    var tltip1 = undefined;
+    var tltip2 = undefined;
+    var tooltip = new ol.Overlay({
+      element: tip,
+      positioning: 'bottom-center',
+      offset: [10, 0],
+    });
+    map.addOverlay(tooltip);
+    var popup = new ol.Overlay({
+      element: element,
+      positioning: 'bottom-center',
+      autoPan: true,
+      autoPanAnimation: { duration: 500 },
+      stopEvent: true
+    });
+    map.addOverlay(popup);
+    /**
+     * Add a click handler to hide the popup.
+     * @return {boolean} Don't follow the href.
+     */
+    closer.onclick = function() {
+      popup.setPosition(undefined);
+      closer.blur();
+      tltip1 = undefined;
+      tltip2 = undefined;
+      return false;
+    };
+    map.on('pointermove', function(evt) {
+      evt.preventDefault()
+      if (tltip2 !== undefined) {
+        return;
+      }
+      var feature = this.forEachFeatureAtPixel(evt.pixel,
+                                               function(feature, layer) {
+        tltip1 = feature;
+        return feature;
+      });
+      map.getTargetElement().style.cursor = feature ? 'pointer' : '';
+      if (evt.dragging) {
+        tooltip.setPosition(undefined);
+        return;
+      }
+      if (feature) {
+        var coordinate = evt.coordinate;
+        tipcontent.innerHTML = feature.get('name');
+        tooltip.setPosition(coordinate);
+      } else {
+        tooltip.setPosition(undefined);
+      }
+    });
+    map.on('singleclick', function(evt) {
+      evt.preventDefault();
+      if (tltip1 !== undefined) {
+        tooltip.setPosition(undefined);
+      }
+      var feature = map.forEachFeatureAtPixel(evt.pixel,
+                                              function(feature, layer) {
+        tltip2 = feature;
+        return feature;
+      });
+      if (feature) {
+      var coordinate = evt.coordinate;
+      var title = '<h2>' + feature.get('name') + '</h2>';
+      ptitle.innerHTML = title;
+      content.innerHTML = feature.get('data');
+      popup.setPosition(coordinate);
+      }
+      });
+  });
+
+		</script>
+		</div>
+		<div class="fullclear"></div>
+		<div id="footer">
+			<p id="createdate">
+			Vytvořeno v <a href="http://gramps-project.org/">Gramps</a> verze 6.0.0 24. kvě 2025<br />Vytvořeno pro <a href="ppl/f/0/fe112977a91591227ee50907e0f.html">Tomanová, Dagmar předci</a>
+			</p>
+			<p id="copyright">
+			
+			</p>
+		</div>
+	</div>
+</body>
+</html>
